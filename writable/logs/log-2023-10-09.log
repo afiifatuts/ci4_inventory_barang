@@ -1,0 +1,33 @@
+ERROR - 2023-10-09 02:21:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', '', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Database\CreateDatabase.php(134): CodeIgniter\Database\Config::forge()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\Config.php(108): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Database\CreateDatabase.php(134): CodeIgniter\Database\Config::forge()
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:create', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\spark(102): CodeIgniter\CLI\Console->run()
+#7 {main}
+ERROR - 2023-10-09 02:21:40 --> mysqli_sql_exception: Can't create database 'dbgudang'; database exists in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE DATABASE...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE DATABASE...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE DATABASE...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\Forge.php(230): CodeIgniter\Database\BaseConnection->query('CREATE DATABASE...')
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Database\CreateDatabase.php(134): CodeIgniter\Database\Forge->createDatabase('dbgudang')
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
