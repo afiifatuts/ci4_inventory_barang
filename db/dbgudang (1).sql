@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2023 at 10:44 AM
+-- Generation Time: Oct 09, 2023 at 11:50 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -34,7 +34,8 @@ CREATE TABLE `barang` (
   `brgkatid` int(10) UNSIGNED NOT NULL,
   `brgsatid` int(10) UNSIGNED NOT NULL,
   `brgharga` double NOT NULL,
-  `brggambar` varchar(200) NOT NULL
+  `brggambar` varchar(200) NOT NULL,
+  `brgstok` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -54,7 +55,21 @@ CREATE TABLE `kategori` (
 
 INSERT INTO `kategori` (`katid`, `katnama`) VALUES
 (6, 'test'),
-(7, 'test2');
+(7, 'test2'),
+(8, 'w'),
+(9, 'e'),
+(10, 'q'),
+(11, 'q'),
+(12, 'Data 1'),
+(13, 'Data 2'),
+(14, 'Data 3'),
+(15, 'Data 4'),
+(16, 'Data 5'),
+(17, 'Data 6'),
+(18, 'Data 7'),
+(19, 'Data 8'),
+(20, 'Data 9'),
+(21, 'Data 10');
 
 -- --------------------------------------------------------
 
@@ -97,7 +112,7 @@ CREATE TABLE `satuan` (
 --
 
 INSERT INTO `satuan` (`satid`, `satnama`) VALUES
-(1, 'Kg');
+(2, 'Kilogram');
 
 --
 -- Indexes for dumped tables
@@ -137,7 +152,7 @@ ALTER TABLE `satuan`
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `katid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `katid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -149,7 +164,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `satuan`
 --
 ALTER TABLE `satuan`
-  MODIFY `satid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `satid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
