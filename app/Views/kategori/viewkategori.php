@@ -36,7 +36,19 @@ Manajemen Data Kategori
         <tr>
             <td><?= $nomor++;?></td>
             <td><?= $row['katnama']?></td>
-            <td></td>
+            <td>
+            <button type="button" class="btn btn-info" title="Edit Data" 
+            onclick="edit(`<?= $row['katid']?>`)">
+                <i class="fa fa-edit"></i>
+            </button>
+            <form method="POST" action="/kategori/hapus/<?= $row['katid']?>" style="display:inline;" onsubmit="hapus()">
+            <input type="hidden" value="DELETE" name="_method">
+            <button type="submit" class="btn btn-danger" title="Hapus Data">
+                <i class="fa fa-trash-alt"></i>
+            </button>
+        </form>
+
+            </td>
         </tr>
 
         <?php endforeach; ?>
@@ -44,7 +56,20 @@ Manajemen Data Kategori
 </table>
 
 
+<script>
+    function edit(id) { 
+        window.location=('/kategori/formedit/'+id);
+ }
+ function hapus() { 
+    pesan =confirm('Yakin data kategori dihapus?');
 
+    if (pesan) {
+        return true;
+    } else {
+        return false;
+    }
+ }
+</script>
 
 
 
