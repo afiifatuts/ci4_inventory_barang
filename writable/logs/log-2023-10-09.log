@@ -31,3 +31,24 @@ Stack trace:
 #6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:create', Array)
 #7 C:\xampp\htdocs\belajar\ci4_inventory_barang\spark(102): CodeIgniter\CLI\Console->run()
 #8 {main}
+CRITICAL - 2023-10-09 04:11:52 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH\Views\kategori\viewkategori.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kategori/viewkategori', [], true)
+ 4 APPPATH\Controllers\Kategori.php(11): view('kategori/viewkategori')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-09 04:21:06 --> Invalid file: "satuan/viewsatuan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('satuan/viewsatuan.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('satuan/viewsatuan', [], true)
+ 3 APPPATH\Controllers\Satuan.php(11): view('satuan/viewsatuan')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Satuan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satuan))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
