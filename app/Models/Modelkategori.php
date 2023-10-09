@@ -11,4 +11,8 @@ class Modelkategori extends Model
     protected $allowedFields    = [
         'katid', 'katnama'
     ];
+
+    public function cariData($cari) {
+        return $this->table('kategori')->like('katnama',$cari);
+    }
 }

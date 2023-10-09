@@ -13,8 +13,27 @@ class Kategori extends BaseController
     }
     public function index()
     {
+        $tombolcari = $this->request->getPost('tombolcari');
+
+        if (isset($tombolcari)) {
+            $cari = $this->request->getPost('cari');
+            session()->set('cari_kategori',$cari);
+            redirect()->to('/kategori/index');
+        }else{
+            $cari = session() ->get('cari_kategori');
+        }
+
+        //var datakategori apakah carinya ada kalau ada cari data dengan method
+        //yang ada di modelkategori 
+        $dataKategori = $cari? $this->kategori->cariData($cari)->paginate(5,'kategori') :$this->kategori->paginate(5,'kategori');
+
+        $nohalaman = $this->request->getVar('page_kategori')?$this->request->getVar('page_kategori'):1;
         $data = [
-            'tampildata' => $this->kategori->findALl()
+            // 'tampildata' => $this->kategori->findALl()
+            'tampildata' => $dataKategori,
+            'pager' => $this->kategori->pager,
+            'nohalaman' => $nohalaman,
+            'cari'=>$cari
         ];
         return view('kategori/viewkategori', $data);
     }

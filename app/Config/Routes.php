@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Main::index');
 // Kategori Page 
 $routes->get('/kategori/index', 'Kategori::index');
+$routes->post('/kategori/index', 'Kategori::index');
 $routes->get('/kategori/formtambah', 'Kategori::formtambah');
 $routes->post('/kategori/simpandata', 'Kategori::simpandata');
 $routes->get('/kategori/formedit/(:segment)', 'Kategori::formedit/$1');
