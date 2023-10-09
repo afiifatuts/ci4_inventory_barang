@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Main::index');
+// Kategori Page 
 $routes->get('/kategori/index', 'Kategori::index');
 $routes->get('/kategori/formtambah', 'Kategori::formtambah');
 $routes->post('/kategori/simpandata', 'Kategori::simpandata');
@@ -15,10 +16,15 @@ $routes->delete('/kategori/hapus/(:segment)', 'Kategori::hapus/$1');
 $routes->get('/kategori/hapus/(:segment)', 'Kategori::index');
 
 
-
+// Satuan Page 
 $routes->get('/satuan/index', 'Satuan::index');
 $routes->get('/satuan/formtambah', 'Satuan::formtambah');
 $routes->post('/satuan/simpandata', 'Satuan::simpandata');
+$routes->get('/satuan/formedit/(:segment)', 'Satuan::formedit/$1');
+$routes->post('/satuan/updatedata', 'Satuan::updatedata');
+$routes->delete('/satuan/hapus/(:segment)', 'Satuan::hapus/$1');
+$routes->get('/satuan/hapus/(:segment)', 'Satuan::index');
+
 
 
 $routes->get('/barang/index', 'Barang::index');

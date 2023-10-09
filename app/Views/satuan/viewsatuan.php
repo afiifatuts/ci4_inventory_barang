@@ -36,7 +36,18 @@ Manajemen Data Satuan
         <tr>
             <td><?= $nomor++;?></td>
             <td><?= $row['satnama']?></td>
-            <td></td>
+            <td>
+                <button type="button" class="btn btn-info" title="Edit Data" 
+                onclick="edit(`<?= $row['satid']?>`)">
+                    <i class="fa fa-edit"></i>
+                </button>
+                <form method="POST" action="/satuan/hapus/<?= $row['satid']?>" style="display:inline;" onsubmit="hapus()">
+                <input type="hidden" value="DELETE" name="_method">
+                <button type="submit" class="btn btn-danger" title="Hapus Data">
+                    <i class="fa fa-trash-alt"></i>
+                </button>
+            </form>
+            </td>
         </tr>
 
         <?php endforeach; ?>
@@ -44,6 +55,20 @@ Manajemen Data Satuan
 </table>
 
 
+<script>
+    function edit(id) { 
+        window.location=('/satuan/formedit/'+id);
+ }
+ function hapus() { 
+    pesan =confirm('Yakin data satuan dihapus?');
+
+    if (pesan) {
+        return true;
+    } else {
+        return false;
+    }
+ }
+</script>
 
 
 
