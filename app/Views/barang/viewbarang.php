@@ -11,6 +11,8 @@ Manajemen Data Barang
 <?= $this->endSection('subjudul') ?>
 
 <?= $this->section('isi') ?>
+<?= session()->getFlashdata('error')?>
+<?= session()->getFlashdata('sukses')?>
 <table class="table table-striped table-bordered" style="width: 100%;">
     <thead>
         <tr>
@@ -39,7 +41,16 @@ Manajemen Data Barang
             <td><?= number_format($row['brgharga'],0)?></td>
             <td><?= number_format($row['brgstok'],0)?></td>
             <td>
-           
+           <button type="button" class="btn btn-sm btn-info" onclick="edit('<?= $row['brgkode']?>')">
+            <i class="fa fa-edit"></i>
+           </button>
+
+           <form  action="/barang/hapus/<?= $row['brgkode']?>" method="POST" style="display:inline;" onsubmit="hapus()">
+            <input type="hidden" value="DELETE" name="_method">
+            <button type="submit" class="btn btn-sm btn-danger" title="Hapus Data">
+                <i class="fa fa-trash-alt"></i>
+            </button>
+        </form>
 
             </td>
         </tr>
@@ -47,4 +58,19 @@ Manajemen Data Barang
         <?php endforeach; ?>
     </tbody>
 </table>
+
+<script>
+    function edit(kode) { 
+        window.location.href = ('/barang/edit/'+kode);
+     }
+
+     function hapus(kode) { 
+        pesan = confirm('Yakin data barang ini dihapus ? ')
+        if(pesan){
+            return true
+        }else{
+            return false
+        }
+     }
+</script>
 <?= $this->endSection('isi') ?>
