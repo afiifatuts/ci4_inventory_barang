@@ -15,7 +15,7 @@ class Modelbarang extends Model
 
     //menampilkan semua field yang berhubungan dengan table barang(kategori&satuan)
     public function tampildata() {
-        return $this->table('barang')->join('kategori')
+        return $this->table('barang')->join('kategori','brgkatid=katid')->join('satuan','brgsatid=satid')->get();
     }
 
 }

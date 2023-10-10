@@ -29,3 +29,5 @@ $routes->get('/satuan/hapus/(:segment)', 'Satuan::index');
 
 
 $routes->get('/barang/index', 'Barang::index');
+$routes->get('/barang/tambah', 'Barang::tambah');
+$routes->post('/barang/simpandata', 'Barang::simpandata');
