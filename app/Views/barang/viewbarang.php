@@ -13,6 +13,20 @@ Manajemen Data Barang
 <?= $this->section('isi') ?>
 <?= session()->getFlashdata('error')?>
 <?= session()->getFlashdata('sukses')?>
+
+<?= form_open('barang/index')?>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Cari data berdasarkan Kode, Nama Barang, & Kategori" name="cari" autofocus value="<?= $cari?>">
+  <button class="btn btn-outline-success" type="submit" id="tombolcari">
+    <i class="fa fa-search"></i></button>
+</div>
+<?= form_close();?>
+<span class="badge badge-success">
+    <h5>
+        <?= "Total Data : $totaldata ";?>
+    </h5>
+</span>
+
 <table class="table table-striped table-bordered" style="width: 100%;">
     <thead>
         <tr>
@@ -29,8 +43,8 @@ Manajemen Data Barang
 
     <tbody>
         <?php 
-        $nomor = 1;
-        foreach ($tampildata->getResultArray() as $row):
+        $nomor = 1 +(($nohalaman-1)*10);
+        foreach ($tampildata as $row):
         ?>
         <tr>
             <td><?= $nomor++;?></td>
@@ -58,7 +72,9 @@ Manajemen Data Barang
         <?php endforeach; ?>
     </tbody>
 </table>
-
+<div class="float-left mt-4">
+    <?= $pager -> links('barang','paging')?>
+</div>
 <script>
     function edit(kode) { 
         window.location.href = ('/barang/edit/'+kode);
