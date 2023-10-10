@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="<?= base_url() ?>/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>/dist/css/adminlte.min.css">
+  <!-- jQuery -->
+  <script src="<?= base_url() ?>/plugins/jquery/jquery.min.js"></script>
+   
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -79,6 +82,14 @@
                             <a href="<?= site_url('/barang/index') ?>" class="nav-link">
                                 <i class="nav-icon fa fa-tasks text-danger"></i>
                                 <p class="text">Barang</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-header">Transaksi</li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('/barangmasuk/index') ?>" class="nav-link">
+                                <i class="nav-icon fa fa-arrow-circle-down text-primary"></i>
+                                <p class="text">Barang Masuk</p>
                             </a>
                         </li>
                     </ul>
@@ -152,9 +163,7 @@
     </div>
     <!-- ./wrapper -->
 
-    <!-- jQuery -->
-    <script src="<?= base_url() ?>/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
+   <!-- Bootstrap 4 -->
     <script src="<?= base_url() ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?= base_url() ?>/dist/js/adminlte.min.js"></script>

@@ -36,3 +36,9 @@ $routes->get('/barang/edit/(:segment)', 'Barang::edit/$1');
 $routes->post('/barang/updatedata', 'Barang::updatedata');
 $routes->delete('/barang/hapus/(:segment)', 'Barang::hapus/$1');
 $routes->get('/barang/hapus/(:segment)', 'Barang::index');
+
+
+// Barang Masuk 
+$routes->get('/barangmasuk/index', 'Barangmasuk::index');
+$routes->post('/barangmasuk/dataTemp', 'Barangmasuk::dataTemp');
+$routes->get('/barangmasuk/dataTemp', 'Barangmasuk::dataTemp');
