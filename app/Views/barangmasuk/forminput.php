@@ -105,5 +105,33 @@ Input Barang Masuk
     $(document).ready(function () {
         dataTemp()
     });
+
+    $('#kdbarang').keydown(function (e) { 
+        if(e.keyCode==13){
+            e.preventDefault();
+            let kodebarang = $('#kdbarang').val();
+            // alert("hello");
+            $.ajax({
+                type: "post",
+                url: "/barangmasuk/ambilDataBarang",
+                data: {
+                    kodebarang :kodebarang
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.sukses){
+                        let data =response.sukses;
+                        $('#namabarang').val(data.namabarang);
+                        $('#hargajual').val(data.hargajual);
+                    }
+                },
+                error: function(xhr, ajaxOption, thrownError){
+                console.log(xhr, ajaxOption, thrownError)
+
+                alert(xhr.status ,thrownError);
+            }
+            });
+        }
+    });
 </script>
 <?= $this->endSection('isi') ?>

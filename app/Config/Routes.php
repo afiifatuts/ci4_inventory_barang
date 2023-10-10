@@ -42,3 +42,5 @@ $routes->get('/barang/hapus/(:segment)', 'Barang::index');
 $routes->get('/barangmasuk/index', 'Barangmasuk::index');
 $routes->post('/barangmasuk/dataTemp', 'Barangmasuk::dataTemp');
 $routes->get('/barangmasuk/dataTemp', 'Barangmasuk::dataTemp');
+$routes->post('/barangmasuk/ambilDataBarang', 'Barangmasuk::ambilDataBarang');
+$routes->get('/barangmasuk/ambilDataBarang', 'Barangmasuk::ambilDataBarang');

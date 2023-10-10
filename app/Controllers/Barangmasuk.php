@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\Modeltempbarangmasuk;
+use App\Models\Modelbarang;
 
 
 class Barangmasuk extends BaseController
@@ -26,6 +27,28 @@ class Barangmasuk extends BaseController
             $json =[
                 'data'=> view('barangmasuk/datatemp',$data)
             ];
+            echo json_encode($json);
+        }else{
+            exit("maaf tidak bisa dipanggil");
+        }
+    }
+
+    public function ambilDataBarang() {
+        if($this->request->isAJAX()){
+            $kodebarang = $this->request->getPost('kodebarang');
+            $modelBarang = new Modelbarang();
+
+            $ambilData = $modelBarang->find($kodebarang);
+
+            $data =[
+                'namabarang'=> $ambilData['brgnama'],
+                'hargajual'=> $ambilData['brgharga']
+            ];
+
+            $json = [
+                'sukses'=> $data
+            ];
+
             echo json_encode($json);
         }else{
             exit("maaf tidak bisa dipanggil");
