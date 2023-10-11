@@ -40,16 +40,53 @@ class Barangmasuk extends BaseController
 
             $ambilData = $modelBarang->find($kodebarang);
 
-            $data =[
-                'namabarang'=> $ambilData['brgnama'],
-                'hargajual'=> $ambilData['brgharga']
-            ];
+            if ($ambilData == NULL){
+                $json =[
+                    'error'=>'Data barang tidak ditemukan....'
+                ];
+            }else{
+                $data =[
+                    'namabarang'=> $ambilData['brgnama'],
+                    'hargajual'=> $ambilData['brgharga']
+                ];
+    
+                $json = [
+                    'sukses'=> $data
+                ];
+    
+            }
 
-            $json = [
-                'sukses'=> $data
-            ];
-
+           
             echo json_encode($json);
+        }else{
+            exit("maaf tidak bisa dipanggil");
+        }
+    }
+
+    public function simpanTemp() {
+        if($this->request->isAJAX()){
+           $faktur = $this->request->getPost('faktur');
+           $hargajual = $this->request->getPost('hargajual');
+           $hargabeli = $this->request->getPost('hargabeli');
+           $kdbarang = $this->request->getPost('kdbarang');
+           $jumlah = $this->request->getPost('jumlah');
+           
+           $modelTempBarang = new Modeltempbarangmasuk();
+
+           $modelTempBarang->insert([
+            'detfaktur'=>$faktur,
+            'detbrgkode'=>$kdbarang,
+            'dethargamasuk'=>$hargabeli,
+            'dethargajual'=>$hargajual,
+            'detjml'=>$jumlah,
+            'detsubtotal'=> intval($jumlah)* intval($hargabeli)
+           ]);
+
+
+           $json = [
+            'sukses'=> 'Item berhasil ditambahkan'
+           ];
+           echo json_encode($json);
         }else{
             exit("maaf tidak bisa dipanggil");
         }

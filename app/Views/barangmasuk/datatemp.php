@@ -20,16 +20,16 @@
                 <td><?= $row['brgkode']; ?></td>
                 <td><?= $row['brgnama']; ?></td>
                 <td style="text-align: right;">
-                <?= $number_format($row['dethargajual'],0,",",".") ?>
+                <?= number_format($row['dethargajual'],0,",",".") ?>
                 </td>
                 <td style="text-align: right;">
-                <?= $number_format($row['dethargamasuk'],0,",",".") ?>
+                <?= number_format($row['dethargamasuk'],0,",",".") ?>
                 </td>
                 <td style="text-align: right;">
-                <?= $number_format($row['detjml'],0,",",".") ?>
+                <?= number_format($row['detjml'],0,",",".") ?>
                 </td>
                 <td style="text-align: right;">
-                <?= $number_format($row['detsubtotal'],0,",",".") ?>
+                <?= number_format($row['detsubtotal'],0,",",".") ?>
                 </td>
                 <td>
                     <button type="button" class="btn btn-sm btn-outline-danger"

@@ -101,10 +101,22 @@ Input Barang Masuk
         });
     }
 </script>
+
+<script>
+function kosong(){
+  $('#kdbarang').val('');
+  $('#namabarang').val('');
+  $('#hargajual').val('');
+  $('#hargabeli').val('');
+  $('#jumlah').val('');
+  $('#kdbarang').focus();
+}
+</script>
+
 <script>
     $(document).ready(function () {
         dataTemp()
-    });
+    
 
     $('#kdbarang').keydown(function (e) { 
         if(e.keyCode==13){
@@ -123,6 +135,13 @@ Input Barang Masuk
                         let data =response.sukses;
                         $('#namabarang').val(data.namabarang);
                         $('#hargajual').val(data.hargajual);
+
+                        $('#hargabeli').focus();
+                    }
+
+                    if (response.error){
+                      alert(response.error)
+                      kosong();
                     }
                 },
                 error: function(xhr, ajaxOption, thrownError){
@@ -133,5 +152,56 @@ Input Barang Masuk
             });
         }
     });
+
+    $('#tombolTambahItem').click(function (e) { 
+      e.preventDefault();
+      let faktur = $('#faktur').val();
+      let kdbarang = $('#kdbarang').val();
+      let hargabeli = $('#hargabeli').val();
+      let hargajual = $('#hargajual').val();
+      let jumlah = $('#jumlah').val();
+
+      if (faktur.length===0){
+        alert("Maaf, faktur wajib diisi")
+      }
+      else if(kdbarang.length === 0){
+        alert("Maaf , kodebarang tidak boleh kosong")
+      }else if(hargabeli.length === 0){
+        alert("Maaf , harga beli tidak boleh kosong")
+      }else if(jumlah.length === 0){
+        alert("Maaf , jumlah tidak boleh kosong")
+      }else{
+          $.ajax({
+            type: "post",
+            url: "/barangmasuk/simpanTemp",
+            data: {
+              faktur:faktur,
+              kdbarang:kdbarang,
+              hargabeli:hargabeli,
+              hargajual:hargajual,
+              jumlah:jumlah,
+            },
+            dataType: "json",
+            success: function (response) {
+              if(response.sukses){
+                alert(response.sukses);
+                kosong();
+                dataTemp();
+              }
+            }, error: function(xhr, ajaxOption, thrownError){
+                console.log(xhr, ajaxOption, thrownError)
+
+                alert(xhr.status ,thrownError);
+            }
+          });
+      }
+    });
+
+    $('#tombolReload').click(function (e) { 
+      e.preventDefault();
+      dataTemp();
+      
+    });
+  });
 </script>
 <?= $this->endSection('isi') ?>
