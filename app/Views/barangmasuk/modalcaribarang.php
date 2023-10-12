@@ -55,6 +55,7 @@
      }
 </script>
 <script>
+  $(document).ready(function () {
     $('#btnCari').click(function (e) { 
         e.preventDefault();
         cariDataBarang();
@@ -65,4 +66,6 @@
         cariDataBarang();
         }
     });
+  });
+    
 </script>

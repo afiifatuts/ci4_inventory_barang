@@ -72,6 +72,13 @@ Input Barang Masuk
 
   <div class="row" id="tampilDataTemp"></div>
 
+  <div class="row justify-content-end">
+      <button type="button" class="btn btn-lg btn-success" id="tombolSelesaiTransaksi">
+        <i class="fa fa-save"></i> Selesai Transaksi 
+      </button>
+    </div>
+
+
 </div>
 </div>
 <div class="modalcaribarang" style="display:none;"></div>
@@ -244,6 +251,69 @@ function kosong(){
                 alert(xhr.status ,thrownError);
             }
       });
+      
+    });
+
+    $('#tombolSelesaiTransaksi').click(function (e) { 
+      e.preventDefault();
+      let faktur = $('#faktur').val();
+
+      if(faktur.length ==0){
+        Swal.fire({
+          title:"Pesan",
+          icon:"warning",
+          text: "Maaf, faktur tidak boleh kosong"
+
+        })
+      }else{
+        Swal.fire({
+        title: 'Selesai Transaksi?',
+        text: "Yakin transaksi ini disimpan?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Simpan'
+      }).then((result) => {
+        if (result.isConfirmed) {
+         $.ajax({
+          type: "post",
+          url: "/barangmasuk/selesaiTransaksi",
+          data: {
+            faktur:faktur,
+            tglfaktur: $('#tglfaktur').val()
+          },
+          dataType: "json",
+          success: function (response) {
+            if(response.error){
+              Swal.fire({
+              title:"Error",
+              icon:"warning",
+              text: (response.error)
+
+            })
+            }
+
+            if(response.sukses){
+              Swal.fire({
+                title:"Berhasil",
+                icon:"success",
+                text: (response.sukses)
+              }).then((result)=>{
+                if(result.isConfirmed){
+                  window.location.reload();
+                }
+              })
+            }
+          },error: function(xhr, ajaxOption, thrownError){
+                console.log(xhr, ajaxOption, thrownError)
+
+                alert(xhr.status ,thrownError);
+            }
+         });
+        }
+      })
+      }
       
     });
   });

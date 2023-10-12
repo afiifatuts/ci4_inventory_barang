@@ -49,3 +49,4 @@ $routes->post('/barangmasuk/dataTemp', 'Barangmasuk::dataTemp');
 $routes->post('/barangmasuk/hapus', 'Barangmasuk::hapus');
 $routes->get('/barangmasuk/cariDataBarang', 'Barangmasuk::cariDataBarang');
 $routes->post('/barangmasuk/detailCariBarang', 'Barangmasuk::detailCariBarang');
+$routes->post('/barangmasuk/selesaiTransaksi', 'Barangmasuk::selesaiTransaksi');

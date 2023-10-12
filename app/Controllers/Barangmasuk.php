@@ -5,7 +5,8 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\Modeltempbarangmasuk;
 use App\Models\Modelbarang;
-
+use App\Models\Modelbarangmasuk;
+use App\Models\Modeldetailbarangmasuk;
 
 class Barangmasuk extends BaseController
 {
@@ -140,6 +141,60 @@ class Barangmasuk extends BaseController
  
  
             
+         }else{
+             exit("maaf tidak bisa dipanggil");
+         }
+    }
+
+    public function selesaiTransaksi()  {
+        if($this->request->isAJAX()){
+          $faktur = $this->request->getPost('faktur');
+          $tglfaktur = $this->request->getPost('tglfaktur');
+        
+          $modelTemp = new Modeltempbarangmasuk();
+          $dataTemp = $modelTemp->getWhere(['detfaktur'=>$faktur]);
+
+          if($dataTemp->getNumRows() == 0){
+            $json=[
+                'error'=> 'Maaf, data iten untuk faktur ini belum ada...'
+            ];
+          }else{
+            //Simpan ke Table Barang Masuk
+            $modelBarangMasuk = new Modelbarangmasuk();
+            $totalSubtotal =0;
+
+            foreach($dataTemp->getResultArray() as $total):
+                $totalSubtotal += intval($total['detsubtotal']);
+                // $totalSubtotal = $totalSubtotal + intval($total['detsubtotal']);
+          endforeach;
+          $modelBarangMasuk->insert([
+            'faktur'=>$faktur,
+            'tglfaktur'=>$tglfaktur,
+            'totalharga'=>$totalSubtotal
+          ]);
+
+          //Simpan ke Tavel detail barang masuk
+          $modelDetailBarangMasuk = new Modeldetailbarangmasuk();
+          foreach ($dataTemp->getResultArray() as $row):
+            $modelDetailBarangMasuk->insert([
+                'detfaktur'=>$row['detfaktur'],
+                'detbrgkode'=>$row['detbrgkode'],
+                'dethargamasuk'=>$row['dethargamasuk'],
+                'dethargajual'=>$row['dethargajual'],
+                'detjml'=>$row['detjml'],
+                'detsubtotal'=>$row['detsubtotal'],
+            ]);
+          endforeach;
+
+          //Hapus data yang ada ditabel temp 
+          $modelTemp ->emptyTable();
+
+          $json = [
+            'sukses'=>'Transaksi berhasil disimpan'
+          ];
+
+          }
+            echo json_encode($json);
          }else{
              exit("maaf tidak bisa dipanggil");
          }
