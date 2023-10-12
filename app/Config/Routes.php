@@ -47,3 +47,5 @@ $routes->get('/barangmasuk/ambilDataBarang', 'Barangmasuk::ambilDataBarang');
 $routes->post('/barangmasuk/simpanTemp', 'Barangmasuk::simpanTemp');
 $routes->post('/barangmasuk/dataTemp', 'Barangmasuk::dataTemp');
 $routes->post('/barangmasuk/hapus', 'Barangmasuk::hapus');
+$routes->get('/barangmasuk/cariDataBarang', 'Barangmasuk::cariDataBarang');
+$routes->post('/barangmasuk/detailCariBarang', 'Barangmasuk::detailCariBarang');

@@ -74,7 +74,7 @@ Input Barang Masuk
 
 </div>
 </div>
-
+<div class="modalcaribarang" style="display:none;"></div>
 <script>
     function dataTemp(){
         let faktur = $('#faktur').val();
@@ -112,16 +112,9 @@ function kosong(){
   $('#kdbarang').focus();
 }
 </script>
-
 <script>
-    $(document).ready(function () {
-        dataTemp()
-    
-
-    $('#kdbarang').keydown(function (e) { 
-        if(e.keyCode==13){
-            e.preventDefault();
-            let kodebarang = $('#kdbarang').val();
+  function ambilDataBarang(){
+    let kodebarang = $('#kdbarang').val();
             // alert("hello");
             $.ajax({
                 type: "post",
@@ -150,6 +143,18 @@ function kosong(){
                 alert(xhr.status ,thrownError);
             }
             });
+  }
+</script>
+
+<script>
+    $(document).ready(function () {
+        dataTemp()
+    
+
+    $('#kdbarang').keydown(function (e) { 
+        if(e.keyCode==13){
+            e.preventDefault();
+            ambilDataBarang()
         }
     });
 
@@ -220,6 +225,25 @@ function kosong(){
     $('#tombolReload').click(function (e) { 
       e.preventDefault();
       dataTemp();
+      
+    });
+
+    $('#tombolCariBarang').click(function (e) { 
+      e.preventDefault();
+      $.ajax({
+        url: "/barangmasuk/cariDataBarang",
+        dataType: "json",
+        success: function (response) {
+          if(response.data){
+              $('.modalcaribarang').html(response.data).show();
+              $('#modalcaribarang').modal('show');
+          }
+        },error: function(xhr, ajaxOption, thrownError){
+                console.log(xhr, ajaxOption, thrownError)
+
+                alert(xhr.status ,thrownError);
+            }
+      });
       
     });
   });

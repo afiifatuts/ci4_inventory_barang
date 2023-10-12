@@ -108,4 +108,40 @@ class Barangmasuk extends BaseController
              exit("maaf tidak bisa dipanggil");
          }
     }
+
+    public function cariDataBarang()  {
+        if($this->request->isAJAX()){
+            
+            $json = [
+             'data'=> view('barangmasuk/modalcaribarang')
+            ];
+            echo json_encode($json);
+         }else{
+             exit("maaf tidak bisa dipanggil");
+         }
+    }
+
+    public function detailCariBarang() {
+        if($this->request->isAJAX()){
+            $cari = $this->request->getPost('cari');
+
+            $modelBarang = new Modelbarang();
+ 
+            $data= $modelBarang->tampildata_cari($cari)->get();
+
+            if($data != null){
+                $json = [
+                    'data'=> view('barangmasuk/detaildatabarang',[
+                        'tampildata'=>$data
+                    ])
+                   ];  
+                   echo json_encode($json);
+            }
+ 
+ 
+            
+         }else{
+             exit("maaf tidak bisa dipanggil");
+         }
+    }
 }
