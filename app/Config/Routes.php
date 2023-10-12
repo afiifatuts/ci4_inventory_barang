@@ -50,3 +50,5 @@ $routes->post('/barangmasuk/hapus', 'Barangmasuk::hapus');
 $routes->get('/barangmasuk/cariDataBarang', 'Barangmasuk::cariDataBarang');
 $routes->post('/barangmasuk/detailCariBarang', 'Barangmasuk::detailCariBarang');
 $routes->post('/barangmasuk/selesaiTransaksi', 'Barangmasuk::selesaiTransaksi');
+$routes->get('/barangmasuk/data', 'Barangmasuk::data');
+$routes->post('/barangmasuk/data', 'Barangmasuk::data');

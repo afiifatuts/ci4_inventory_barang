@@ -90,7 +90,7 @@
 
                         <li class="nav-header">Transaksi</li>
                         <li class="nav-item">
-                            <a href="<?= site_url('/barangmasuk/index') ?>" class="nav-link">
+                            <a href="<?= site_url('/barangmasuk/data') ?>" class="nav-link">
                                 <i class="nav-icon fa fa-arrow-circle-down text-primary"></i>
                                 <p class="text">Barang Masuk</p>
                             </a>

@@ -5,7 +5,7 @@ Input Barang Masuk
 <?= $this->endSection('judul') ?>
 
 <?= $this->section('subjudul') ?>
-<button type="button" class="btn btn-warning" onclick="location.href=('/barangmasuk/index')">
+<button type="button" class="btn btn-warning" onclick="location.href=('/barangmasuk/data')">
     <i class="fa fa-backward"></i> Kembali
 </button>
 <?= $this->endSection('subjudul') ?>

@@ -199,4 +199,8 @@ class Barangmasuk extends BaseController
              exit("maaf tidak bisa dipanggil");
          }
     }
+
+    public function data(){
+        return view('barangmasuk/viewdata');
+    }
 }
