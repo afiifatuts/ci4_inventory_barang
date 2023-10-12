@@ -162,14 +162,30 @@ function kosong(){
       let jumlah = $('#jumlah').val();
 
       if (faktur.length===0){
-        alert("Maaf, faktur wajib diisi")
+        Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Maaf, faktur wajib diisi'
+      })
       }
       else if(kdbarang.length === 0){
-        alert("Maaf , kodebarang tidak boleh kosong")
+        Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Maaf , kodebarang tidak boleh kosong'
+      })
       }else if(hargabeli.length === 0){
-        alert("Maaf , harga beli tidak boleh kosong")
+        Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Maaf , harga beli tidak boleh kosong'
+      })
       }else if(jumlah.length === 0){
-        alert("Maaf , jumlah tidak boleh kosong")
+        Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Maaf , jumlah tidak boleh kosong'
+      })
       }else{
           $.ajax({
             type: "post",
@@ -184,7 +200,11 @@ function kosong(){
             dataType: "json",
             success: function (response) {
               if(response.sukses){
-                alert(response.sukses);
+                Swal.fire(
+                    'Sukses!',
+                    response.sukses,
+                    'success'
+                  )
                 kosong();
                 dataTemp();
               }

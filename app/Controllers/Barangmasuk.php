@@ -91,4 +91,21 @@ class Barangmasuk extends BaseController
             exit("maaf tidak bisa dipanggil");
         }
     }
+
+    public function hapus()  {
+        if($this->request->isAJAX()){
+            $id = $this->request->getPost('id');
+            $modelTempBarang = new Modeltempbarangmasuk();
+ 
+            $modelTempBarang->delete($id);
+ 
+ 
+            $json = [
+             'sukses'=> 'Item berhasil dihapus'
+            ];
+            echo json_encode($json);
+         }else{
+             exit("maaf tidak bisa dipanggil");
+         }
+    }
 }

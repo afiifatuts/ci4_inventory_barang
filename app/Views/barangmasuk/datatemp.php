@@ -41,3 +41,41 @@
         <?php endforeach;?>
     </tbody>
 </table>
+
+<script>
+    function hapusItem(id){
+        Swal.fire({
+        title: 'Hapus Item',
+        text: "Yakin menghapus item ini?",
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus'
+        }).then((result) => {
+        if (result.isConfirmed) {
+           $.ajax({
+            type: "post",
+            url: "/barangmasuk/hapus",
+            data: {
+                id:id
+            },
+            dataType: "json",
+            success: function (response) {
+                if(response.sukses){
+                    dataTemp(),
+                    Swal.fire(
+                    'Sukses',
+                    (response.sukses),
+                    'success'
+                    )
+                }
+            },error: function(xhr, ajaxOption, thrownError){
+                console.log(xhr, ajaxOption, thrownError)
+
+                alert(xhr.status ,thrownError);
+            }
+           });
+        }
+        })
+    }
+</script>

@@ -1,0 +1,98 @@
+ERROR - 2023-10-12 01:44:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbgudang', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-12 01:44:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-12 01:44:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbgudang', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-12 01:44:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
