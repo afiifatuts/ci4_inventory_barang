@@ -90,14 +90,15 @@
         if (result.isConfirmed) {
            $.ajax({
             type: "post",
-            url: "/barangmasuk/hapus",
+            url: "/barangmasuk/hapusItemDetail",
             data: {
-                id:id
+                id:id,
+                faktur : $('#faktur').val()
             },
             dataType: "json",
             success: function (response) {
                 if(response.sukses){
-                    dataTemp(),
+                    dataDetail(),
                     Swal.fire(
                     'Sukses',
                     (response.sukses),

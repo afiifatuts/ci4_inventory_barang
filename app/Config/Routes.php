@@ -58,4 +58,6 @@ $routes->post('/barangmasuk/dataDetail', 'Barangmasuk::dataDetail');
 $routes->post('/barangmasuk/editItem', 'Barangmasuk::editItem');
 $routes->post('/barangmasuk/simpanDetail', 'Barangmasuk::simpanDetail');
 $routes->post('/barangmasuk/updateItem', 'Barangmasuk::updateItem');
+$routes->post('/barangmasuk/hapusItemDetail', 'Barangmasuk::hapusItemDetail');
+$routes->post('/barangmasuk/hapusTransaksi', 'Barangmasuk::hapusTransaksi');
 // $routes->post('/barangmasuk/edit/(:segment)', 'Barangmasuk::edit/$1');

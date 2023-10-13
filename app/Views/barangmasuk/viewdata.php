@@ -58,6 +58,10 @@ Data Transaksi Barang Masuk
             <button type="button" class="btn btn-sm btn-outline-info" title="Edit Transaksi" onclick="editbarang('<?= sha1($row['faktur'])?>')">
               <i class="fa fa-edit"></i>
             </button>
+            &nbsp;
+            <button type="button" class="btn btn-sm btn-outline-danger" title="Hapus Transaksi" onclick="hapustransaksi('<?= sha1($row['faktur'])?>')">
+              <i class="fa fa-trash-alt"></i>
+            </button>
           </td>
         </tr>
 
@@ -70,6 +74,48 @@ Data Transaksi Barang Masuk
 <div class="float-left mt-4">
     <?= $pager -> links('barangmasuk','paging')?>
 </div>
+<!-- hapus Transaksi  -->
+<script>
+function hapustransaksi(faktur){
+  Swal.fire({
+        title: 'Hapus Transaksi',
+        text: "Yakin menghapus transaksi ini?",
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus'
+        }).then((result) => {
+        if (result.isConfirmed) {
+           $.ajax({
+            type: "post",
+            url: "/barangmasuk/hapusTransaksi",
+            data: {
+                // id:id,
+                faktur :faktur
+            },
+            dataType: "json",
+            success: function (response) {
+                if(response.sukses){
+                    // datadetail(),
+                    Swal.fire(
+                    'Sukses',
+                    (response.sukses),
+                    'success'
+                    ).then((result)=>{
+                  window.location.reload()
+                  
+                })
+                }
+            },error: function(xhr, ajaxOption, thrownError){
+                console.log(xhr, ajaxOption, thrownError)
+
+                alert(xhr.status ,thrownError);
+            }
+           });
+        }
+        })
+}
+</script>
 <script>
   //untuk edit data per faktur
   function editbarang(faktur){

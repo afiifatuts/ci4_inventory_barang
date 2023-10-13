@@ -363,7 +363,6 @@ class Barangmasuk extends BaseController
             $faktur = $this->request->getPost('faktur');
             $hargajual = $this->request->getPost('hargajual');
             $hargabeli = $this->request->getPost('hargabeli');
-            $kdbarang = $this->request->getPost('kdbarang');
             $jumlah = $this->request->getPost('jumlah');
             
             $modelDetail = new Modeldetailbarangmasuk();
@@ -385,6 +384,63 @@ class Barangmasuk extends BaseController
  
             $json = [
              'sukses'=> 'Item berhasil diupdate'
+            ];
+            echo json_encode($json);
+         }else{
+             exit("maaf tidak bisa dipanggil");
+         }
+    }
+
+    function hapusItemDetail() {
+        if($this->request->isAJAX()){
+            $id = $this->request->getPost('id');
+            $faktur = $this->request->getPost('faktur');
+            $modelDetail = new Modeldetailbarangmasuk();
+            $modelBarangMasuk = new Modelbarangmasuk();
+
+            $modelDetail->delete($id);
+
+            $ambilTotalHarga = $modelDetail->ambilTotalHarga($faktur);
+
+            $modelBarangMasuk->update($faktur,[
+                'totalharga'=>$ambilTotalHarga
+            ]);
+ 
+            
+           
+            
+ 
+            $json = [
+             'sukses'=> 'Item berhasil dihapus'
+            ];
+            echo json_encode($json);
+         }else{
+             exit("maaf tidak bisa dipanggil");
+         }
+    }
+
+    public function hapusTransaksi() 
+    {
+        if($this->request->isAJAX()){
+            $faktur = $this->request->getPost('faktur');
+            $modelDetail = new Modeldetailbarangmasuk();
+            $modelBarangMasuk = new Modelbarangmasuk();
+
+            $modelDetail->hapusFaktur($faktur);
+            $modelBarangMasuk->delete($faktur);
+
+            // $ambilTotalHarga = $modelDetail->ambilTotalHarga($faktur);
+
+            // $modelBarangMasuk->update($faktur,[
+            //     'totalharga'=>$ambilTotalHarga
+            // ]);
+ 
+            
+           
+            
+ 
+            $json = [
+             'sukses'=> 'Data berhasil dihapus'
             ];
             echo json_encode($json);
          }else{
