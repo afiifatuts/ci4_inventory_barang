@@ -62,3 +62,8 @@ $routes->post('/barangmasuk/hapusItemDetail', 'Barangmasuk::hapusItemDetail');
 $routes->post('/barangmasuk/hapusTransaksi', 'Barangmasuk::hapusTransaksi');
 $routes->get('/barangmasuk/hapusTransaksi', 'Barangmasuk::hapusTransaksi');
 // $routes->post('/barangmasuk/edit/(:segment)', 'Barangmasuk::edit/$1');
+
+// Barang Keluar 
+$routes->get('/barangkeluar/data', 'Barangkeluar::data');
+$routes->get('/barangkeluar/input', 'Barangkeluar::input');
+$routes->post('/barangkeluar/buatNofaktur', 'Barangkeluar::buatNofaktur');

@@ -95,6 +95,12 @@
                                 <p class="text">Barang Masuk</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('/barangkeluar/data') ?>" class="nav-link">
+                                <i class="nav-icon fa fa-arrow-circle-up text-warning"></i>
+                                <p class="text">Barang Keluar</p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

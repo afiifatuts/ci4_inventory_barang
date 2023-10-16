@@ -18,3 +18,38 @@ INFO - 2023-10-16 01:31:23 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-10-16 01:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-16 01:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-16 01:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 03:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 03:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 03:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 03:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 03:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 05:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 05:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 05:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 05:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-16 06:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-16 09:59:55 --> date_default_timezone_set(): Timezone ID 'WIB' is invalid
+in SYSTEMPATH\CodeIgniter.php on line 217.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'WIB\' is invalid', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\system\\CodeIgniter.php', 217, [])
+ 2 SYSTEMPATH\CodeIgniter.php(217): date_default_timezone_set('WIB')
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-16 09:59:57 --> date_default_timezone_set(): Timezone ID 'WIB' is invalid
+in SYSTEMPATH\CodeIgniter.php on line 217.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'WIB\' is invalid', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\system\\CodeIgniter.php', 217, [])
+ 2 SYSTEMPATH\CodeIgniter.php(217): date_default_timezone_set('WIB')
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
