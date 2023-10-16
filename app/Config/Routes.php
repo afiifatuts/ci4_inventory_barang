@@ -67,3 +67,9 @@ $routes->get('/barangmasuk/hapusTransaksi', 'Barangmasuk::hapusTransaksi');
 $routes->get('/barangkeluar/data', 'Barangkeluar::data');
 $routes->get('/barangkeluar/input', 'Barangkeluar::input');
 $routes->post('/barangkeluar/buatNofaktur', 'Barangkeluar::buatNofaktur');
+
+
+// Pelanggan 
+$routes->get('/pelanggan/formtambah', 'Pelanggan::formtambah');
+$routes->post('/pelanggan/simpan', 'Pelanggan::simpan');
+
