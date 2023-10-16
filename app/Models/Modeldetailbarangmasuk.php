@@ -33,9 +33,9 @@ class Modeldetailbarangmasuk extends Model
         return $this->table('detail_barangmasuk')->join('barang','brgkode=detbrgkode')->where('iddetail',$iddetail)->get();
     }
     
-    public function hapusFaktur($faktur) {
-        return $this->table('detail_barangmasuk')->delete('detfaktur',$faktur);
-    }
+    // public function hapusFaktur($faktur) {
+    //     return $this->table('detail_barangmasuk')->delete('detfaktur',$faktur);
+    // }
 
    
 }

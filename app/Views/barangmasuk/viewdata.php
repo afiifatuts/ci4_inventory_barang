@@ -59,7 +59,7 @@ Data Transaksi Barang Masuk
               <i class="fa fa-edit"></i>
             </button>
             &nbsp;
-            <button type="button" class="btn btn-sm btn-outline-danger" title="Hapus Transaksi" onclick="hapustransaksi('<?= sha1($row['faktur'])?>')">
+            <button type="button" class="btn btn-sm btn-outline-danger" title="Hapus Transaksi" onclick="hapustransaksi('<?= $row['faktur']?>')">
               <i class="fa fa-trash-alt"></i>
             </button>
           </td>
@@ -80,6 +80,7 @@ function hapustransaksi(faktur){
   Swal.fire({
         title: 'Hapus Transaksi',
         text: "Yakin menghapus transaksi ini?",
+        icon:"warning",
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',

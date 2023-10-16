@@ -418,15 +418,18 @@ class Barangmasuk extends BaseController
              exit("maaf tidak bisa dipanggil");
          }
     }
-
+ 
     public function hapusTransaksi() 
     {
         if($this->request->isAJAX()){
             $faktur = $this->request->getPost('faktur');
-            $modelDetail = new Modeldetailbarangmasuk();
+
+            // $modelDetail = new Modeldetailbarangmasuk();
+            $db = \Config\Database::connect();
             $modelBarangMasuk = new Modelbarangmasuk();
 
-            $modelDetail->hapusFaktur($faktur);
+            // $modelDetail->hapusFaktur($faktur);
+            $db->table('detail_barangmasuk')->delete(['detfaktur'=>$faktur]);
             $modelBarangMasuk->delete($faktur);
 
             // $ambilTotalHarga = $modelDetail->ambilTotalHarga($faktur);
@@ -435,12 +438,8 @@ class Barangmasuk extends BaseController
             //     'totalharga'=>$ambilTotalHarga
             // ]);
  
-            
-           
-            
- 
             $json = [
-             'sukses'=> 'Data berhasil dihapus'
+             'sukses'=> "Transaksi dengan faktur : <strong>$faktur</strong>, berhasil dihapus"
             ];
             echo json_encode($json);
          }else{
