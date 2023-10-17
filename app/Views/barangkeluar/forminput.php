@@ -102,6 +102,51 @@ Input Transaksi Barang Keluar
 </div>
 
 <div class="viewmodal" style="display: none;"></div>
+<!-- function untuk mengosongkan form  -->
+<script>
+function kosong(){
+    $('#kodebarang').val('');
+    $('#hargajual').val('');
+    $('#namabarang').val('');
+    $('#jml').val(1);
+}
+</script>
+<!-- untuk ambil data barang  -->
+<script>
+    function ambilDataBarang(){
+        let kodebarang = $('#kodebarang').val();
+        if(kodebarang.length==0){
+            Swal.fire('error','Kode barang harus diinputkan','error')
+            kosong();
+        }else{
+        $.ajax({
+            type: "post",
+            url: "/barangkeluar/ambilDataBarang",
+            data: {
+                kodebarang:kodebarang 
+            },
+            dataType: "json",
+            success: function (response) {
+                if(response.error){
+                    Swal.fire('error',response.error,'error')
+                    kosong();
+                }
+
+                if(response.sukses){
+                    let data =response.sukses;
+
+                    $('#namabarang').val(data.namabarang);
+                    $('#hargajual').val(data.hargajual);
+                    $('#jml').focus();
+                }
+            },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+        });
+    }
+    }
+</script>
 
 <!-- untuk menampilkan data temp -->
 <script>
@@ -157,7 +202,7 @@ function tampilDataTemp() {
             buatNofaktur();
             tampilDataTemp()
         });
-
+        // untuk menambahkan pelanggan 
         $('#tombolTambahPelanggan').click(function (e) { 
             e.preventDefault();
             $.ajax({
@@ -193,6 +238,14 @@ function tampilDataTemp() {
             }
            });
         });
+
+        // ketika tekan enter ke kodebarang 
+        $('#kodebarang').keydown(function (e) { 
+            if(e.keyCode==13){
+                e.preventDefault();
+                ambilDataBarang();
+            }
+         })
     });
 </script>
 

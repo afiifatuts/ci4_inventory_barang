@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\Modelbarang;
 use App\Models\ModelBarangKeluar;
 use App\Models\ModelTempBarangKeluar;
 
@@ -72,6 +73,33 @@ class Barangkeluar extends BaseController
             echo json_encode($json);
 
 
+        }
+    }
+
+
+    public function ambilDataBarang()  {
+        if($this->request->isAJAX()){
+            $kodebarang = $this->request->getPost('kodebarang');
+
+            $modelBarang = new Modelbarang();
+
+            $cekData = $modelBarang->find($kodebarang);
+
+            if($cekData==null){
+                $json = [
+                    'error'=>'Maaf data barang tidak ditemukan...'
+                ];
+            }else{
+                $data =[
+                    'namabarang'=>$cekData['brgnama'],
+                    'hargajual'=>$cekData['brgharga'],
+                ];
+
+                $json=[
+                    'sukses'=> $data
+                ];
+            }
+            echo json_encode($json);
         }
     }
 
