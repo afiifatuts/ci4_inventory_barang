@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ModelBarangKeluar;
+use App\Models\ModelTempBarangKeluar;
 
 class Barangkeluar extends BaseController
 {
@@ -50,6 +51,28 @@ class Barangkeluar extends BaseController
             'nofaktur'=>$this->buatfaktur()
         ];
         return view('barangkeluar/forminput',$data);
+    }
+
+    public function tampilDataTemp(){
+        
+        if($this->request->isAJAX()){
+            $nofaktur = $this->request->getPost('nofaktur');
+
+            $modalTempBarangKeluar = new ModelTempBarangKeluar();
+
+            $dataTemp = $modalTempBarangKeluar->tampilDataTemp($nofaktur);
+            $data=[
+                'tampildata' =>$dataTemp
+            ];
+
+            $json=[
+                'data'=>view('barangkeluar/datatemp',$data)
+            ];
+
+            echo json_encode($json);
+
+
+        }
     }
 
 

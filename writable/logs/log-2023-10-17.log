@@ -10,3 +10,100 @@ in APPPATH\Controllers\Pelanggan.php on line 102.
  4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-17 09:57:14 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\ModelTempBarangKeluar.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangkeluar.php(63): App\Models\ModelTempBarangKeluar->tampilDataTemp('2023-10-17')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-17 09:57:15 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelTempBarangKeluar.php(17): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Barangkeluar.php(63): App\Models\ModelTempBarangKeluar->tampilDataTemp('2023-10-17')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-17 09:58:16 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\ModelTempBarangKeluar.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangkeluar.php(63): App\Models\ModelTempBarangKeluar->tampilDataTemp('2023-10-17')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-17 09:58:16 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelTempBarangKeluar.php(17): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Barangkeluar.php(63): App\Models\ModelTempBarangKeluar->tampilDataTemp('2023-10-17')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-17 09:59:31 --> mysqli_sql_exception: Unknown column 'detbrgkode' in 'on clause' in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\ModelTempBarangKeluar.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangkeluar.php(63): App\Models\ModelTempBarangKeluar->tampilDataTemp('2023-10-17')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-17 09:59:31 --> Unknown column 'detbrgkode' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `faktur` = :faktur:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelTempBarangKeluar.php(17): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Barangkeluar.php(63): App\Models\ModelTempBarangKeluar->tampilDataTemp('2023-10-17')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 10:02:35 --> Invalid file: "baranggkeluar/datatemp.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('baranggkeluar/datatemp.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('baranggkeluar/datatemp', [], true)
+ 3 APPPATH\Controllers\Barangkeluar.php(69): view('baranggkeluar/datatemp', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')

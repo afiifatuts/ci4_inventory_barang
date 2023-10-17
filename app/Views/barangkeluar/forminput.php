@@ -93,10 +93,42 @@ Input Transaksi Barang Keluar
             
         </div>
      </div>
+</div>
 
+<div class="row">
+    <div class="col-lg-12 tampilDataTemp">
+
+    </div>
 </div>
 
 <div class="viewmodal" style="display: none;"></div>
+
+<!-- untuk menampilkan data temp -->
+<script>
+function tampilDataTemp() { 
+    let faktur = $('#tglfaktur').val();
+    $.ajax({
+        type: "post",
+        url: "/barangkeluar/tampilDataTemp",
+        data: {
+            nofaktur:faktur 
+        },
+        dataType: "json",
+        beforeSend:function(){
+            $('.tampilDataTemp').html("<i class='fa fa-spin fa-spinner'></i>")  
+        },
+        success: function (response) {
+          if (response.data){
+            $('.tampilDataTemp').html(response.data);
+          }
+        },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+    });
+ }
+
+</script>
 <!-- membuat no faktur  -->
 <script>
     function buatNofaktur() { 
@@ -119,9 +151,11 @@ Input Transaksi Barang Keluar
 </script>
 <script>
     $(document).ready(function () {
+        tampilDataTemp()
         $('#tglfaktur').change(function (e) { 
             e.preventDefault();
             buatNofaktur();
+            tampilDataTemp()
         });
 
         $('#tombolTambahPelanggan').click(function (e) { 
