@@ -20,7 +20,7 @@
       </div>
       <div class="modal-body">
 
-      <table id="datapelanggan" class="table table-bordered table-striped dataTable dtr-inline collapsed">
+      <table id="datapelanggan" class="table table-bordered table-striped dataTable dtr-inline collapsed" style="width:100%">
             <thead>
                 <tr>
                     <th>No</th>
@@ -37,10 +37,11 @@
     </div>
 </div>
 </div>
-
+<!-- untuk menampilkan list data pelanggan  -->
 <script>
     function listDataPelanggan() { 
         var table = $('#datapelanggan').DataTable({
+            destroy:true,
             "processing":true,
             "serverSide":true,
             "order":[],
@@ -54,6 +55,55 @@
             }]
         })
      }
+</script>
+
+<!-- untuk pilih salah satu data pelanggan  -->
+<script>
+function pilih(id,nama){
+    $('#namapelanggan').val(nama);
+    $('#idpelanggan').val(id);
+
+    $('#modaldatapelanggan').modal('hide');
+}
+</script>
+<!-- untuk hapus pelanggan data  -->
+<script>
+    function hapus(id,nama){
+        Swal.fire({
+        title: 'Hapus Pelanggan?',
+        text: "Yakin menghapus data pelanggan dengan nama "+nama+ " ?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, hapus'
+        }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                type: "post",
+                url: "/pelanggan/hapus",
+                data: {
+                    id:id 
+                }, 
+                dataType: "json",
+                success: function (response) {
+                    if(response.sukses){
+                        Swal.fire(
+                        'Berhasil!',
+                        response.sukses,
+                        'success'
+                        )
+                        listDataPelanggan();
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+        }
+        })
+    }
+   
 </script>
 
 <script>

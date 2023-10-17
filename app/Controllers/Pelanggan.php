@@ -89,10 +89,17 @@ class Pelanggan extends BaseController
             foreach ($lists as $list) {
                 $no++;
                 $row = [];
+
+                $tombolPilih = "<button type=\"button\" class=\"btn btn-sm btn-info\" onclick=\"pilih('".$list->pelid."','".$list->pelnama."')\"> Pilih
+                </button>";
+
+                $tombolHapus = "<button type=\"button\" class=\"btn btn-sm btn-danger\" onclick=\"hapus('".$list->pelid."','".$list->pelnama."')\"> Hapus
+                </button>";
+
                 $row[] = $no;
                 $row[] = $list->pelnama;
                 $row[] = $list->peltelp;
-                $row[] = '';
+                $row[] = $tombolPilih." ".$tombolHapus;
                 $data[] = $row;
             }
             $output = [
@@ -102,6 +109,21 @@ class Pelanggan extends BaseController
                 "data" => $data
             ];
             echo json_encode($output);
+        }
+    }
+
+    public function hapus(){
+        if($this->request->isAJAX()){
+            $id = $this->request->getPost('id');
+
+            $modelPelanggan = new ModelPelanggan();
+
+            $modelPelanggan->delete($id);
+
+            $json =[
+                'sukses'=> 'Data Pelanggan Berhasil Dihapus'
+            ];
+            echo json_encode($json);
         }
     }
 }
