@@ -70,6 +70,8 @@ $routes->post('/barangkeluar/buatNofaktur', 'Barangkeluar::buatNofaktur');
 $routes->get('/barangkeluar/tampilDataTemp', 'Barangkeluar::tampilDataTemp');
 $routes->post('/barangkeluar/tampilDataTemp', 'Barangkeluar::tampilDataTemp');
 $routes->post('/barangkeluar/ambilDataBarang', 'Barangkeluar::ambilDataBarang');
+$routes->post('/barangkeluar/simpanItem', 'Barangkeluar::simpanItem');
+$routes->post('/barangkeluar/hapusItem', 'Barangkeluar::hapusItem');
 
 
 // Pelanggan 

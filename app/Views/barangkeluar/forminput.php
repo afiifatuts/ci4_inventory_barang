@@ -102,10 +102,51 @@ Input Transaksi Barang Keluar
 </div>
 
 <div class="viewmodal" style="display: none;"></div>
+<!-- Membuat function untuk simpan data ke table temporary  -->
+<script>
+    function simpanItem(){
+        let nofaktur = $('#nofaktur').val();
+        let kodebarang = $('#kodebarang').val();
+        let namabarang = $('#namabarang').val();
+        let hargajual = $('#hargajual').val();
+        let jml = $('#jml').val();
+
+        if(kodebarang.length ==0){
+            Swal.fire('error','Kode barang harus diinputkan','error')
+            kosong()
+        }else{
+            $.ajax({
+                type: "post",
+                url: "/barangkeluar/simpanItem",
+                data: {
+                    nofaktur:nofaktur,
+                    kodebarang:kodebarang,
+                    namabarang:namabarang,
+                    hargajual:hargajual,
+                    jml:jml,
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.sukses){
+                        tampilDataTemp()
+                        kosong()
+                    }
+                    
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+        }
+    }
+</script>
+
+
 <!-- function untuk mengosongkan form  -->
 <script>
 function kosong(){
     $('#kodebarang').val('');
+    $('#kodebarang').focus();
     $('#hargajual').val('');
     $('#namabarang').val('');
     $('#jml').val(1);
@@ -148,15 +189,16 @@ function kosong(){
     }
 </script>
 
-<!-- untuk menampilkan data temp -->
+<!-- untuk menampilkan data temp yang akan disimpan-->
 <script>
 function tampilDataTemp() { 
-    let faktur = $('#tglfaktur').val();
+    let nofaktur = $('#nofaktur').val();
+    console.log(nofaktur)
     $.ajax({
         type: "post",
         url: "/barangkeluar/tampilDataTemp",
         data: {
-            nofaktur:faktur 
+            nofaktur:nofaktur 
         },
         dataType: "json",
         beforeSend:function(){
@@ -194,9 +236,11 @@ function tampilDataTemp() {
         });
      }
 </script>
+
 <script>
     $(document).ready(function () {
         tampilDataTemp()
+        // untuk pilih tanggal nnti no fakturnya akan menyesuaikan 
         $('#tglfaktur').change(function (e) { 
             e.preventDefault();
             buatNofaktur();
@@ -246,6 +290,13 @@ function tampilDataTemp() {
                 ambilDataBarang();
             }
          })
+
+        //  ketika klik tombol simpan Item 
+        $('#tombolSimpanItem').click(function (e) { 
+            e.preventDefault();
+            simpanItem();
+            
+        });
     });
 </script>
 

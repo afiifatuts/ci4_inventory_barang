@@ -67,7 +67,7 @@ class Barangkeluar extends BaseController
             ];
 
             $json=[
-                'data'=>view('barangkeluar/datatemp',$data)
+                'data' => view('barangkeluar/datatemp' , $data)
             ];
 
             echo json_encode($json);
@@ -101,6 +101,49 @@ class Barangkeluar extends BaseController
             }
             echo json_encode($json);
         }
+    }
+
+    public function simpanItem() 
+    {
+        if($this->request->isAJAX()){
+            //ambil data dari request
+            $nofaktur = $this->request->getPost('nofaktur');
+            $kodebarang = $this->request->getPost('kodebarang');
+            $namabarang = $this->request->getPost('namabarang');
+            $jml = $this->request->getPost('jml');
+            $hargajual = $this->request->getPost('hargajual');
+
+            //membuat model barang model
+            $modalTempBarangKeluar = new ModelTempBarangKeluar();
+
+            $modalTempBarangKeluar->insert([
+                'detfaktur'=>$nofaktur,
+                'detbrgkode'=>$kodebarang,
+                'dethargajual'=>$hargajual,
+                'detjml'=>$jml,
+                'detsubtotal'=>intval($jml) * intval($hargajual),
+            ]);
+
+            $json =[
+                'sukses'=>'Item berhasil ditambahkan'
+            ];
+
+            echo json_encode($json);
+
+        }    
+    }
+
+    public function hapusItem()  {
+        $id = $this->request->getPost('id');
+
+        $modelTempBarangKeluar = new ModelTempBarangKeluar();
+        $modelTempBarangKeluar->delete($id);
+
+        $json=[
+            'sukses' => 'Item Berhasil Dihapus'
+        ];
+
+        echo json_encode($json);
     }
 
 
