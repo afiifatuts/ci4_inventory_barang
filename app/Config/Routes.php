@@ -72,4 +72,6 @@ $routes->post('/barangkeluar/buatNofaktur', 'Barangkeluar::buatNofaktur');
 // Pelanggan 
 $routes->get('/pelanggan/formtambah', 'Pelanggan::formtambah');
 $routes->post('/pelanggan/simpan', 'Pelanggan::simpan');
+$routes->get('/pelanggan/modalData', 'Pelanggan::modalData');
+$routes->post('/pelanggan/listData', 'Pelanggan::listData');
 

@@ -3,7 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ModelDataPelanggan;
 use App\Models\ModelPelanggan;
+use Config\Services;
 
 class Pelanggan extends BaseController
 {
@@ -65,5 +67,41 @@ class Pelanggan extends BaseController
                 }
 
                 echo json_encode($json);
+    }
+
+    public function modalData(){
+        if($this->request->isAJAX()){
+            $json=[
+                'data'=> view('pelanggan/modeldata')
+            ];
+            echo json_encode($json);
+        }
+    }
+
+    public function listdata()
+    {
+        $request = Services::request();
+        $datamodel = new ModelDataPelanggan($request);
+        if ($request->getMethod(true) == 'POST') {
+            $lists = $datamodel->get_datatables();
+            $data = [];
+            $no = $request->getPost("start");
+            foreach ($lists as $list) {
+                $no++;
+                $row = [];
+                $row[] = $no;
+                $row[] = $list->pelnama;
+                $row[] = $list->peltelp;
+                $row[] = '';
+                $data[] = $row;
+            }
+            $output = [
+                "draw" => $request->getPost('draw'),
+                "recordsTotal" => $datamodel->count_all(),
+                "recordsFiltered" => $datamodel->count_filtered(),
+                "data" => $data
+            ];
+            echo json_encode($output);
+        }
     }
 }

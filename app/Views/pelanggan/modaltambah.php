@@ -85,6 +85,9 @@
                         if (result.isConfirmed) {
                             $('#namapelanggan').val(response.namapelanggan)
                             $('#idpelanggan').val(response.idpelanggan)
+                            $('#modaltambahpelanggan').modal('hide');
+                        }else{
+                            $('#modaltambahpelanggan').modal('hide')
                         }
                         })
                     }

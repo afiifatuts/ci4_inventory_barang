@@ -30,8 +30,7 @@ Input Transaksi Barang Keluar
             <label for="">Cari Pelanggan</label>
             <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Nama Pelanggan" name="namapelanggan" id="namapelanggan" readonly >
-            <input type="text" name="idpelanggan" id="idpelanggan">
-            <!-- <input type="hidden" name="idpelanggan" id="idpelanggan"> -->
+            <input type="hidden" name="idpelanggan" id="idpelanggan">
             <div class="input-group-append">
                 <button title="Cari Pelanggan" class="btn btn-outline-primary" type="button" id="tombolCariPelanggan">
                     <i class="fa fa-search"></i>
@@ -141,6 +140,24 @@ Input Transaksi Barang Keluar
             }
             });
             
+        });
+
+        // ketika search di klik 
+        $('#tombolCariPelanggan').click(function (e) { 
+            e.preventDefault();
+           $.ajax({
+            url: "/pelanggan/modalData",
+            dataType: "json",
+            success: function (response) {
+                if(response.data){
+                    $('.viewmodal').html(response.data).show();
+                    $('#modaldatapelanggan').modal('show');
+                }
+            },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+           });
         });
     });
 </script>
