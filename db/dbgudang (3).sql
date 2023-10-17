@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 16, 2023 at 11:21 AM
+-- Generation Time: Oct 17, 2023 at 11:34 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -44,7 +44,6 @@ CREATE TABLE `barang` (
 
 INSERT INTO `barang` (`brgkode`, `brgnama`, `brgkatid`, `brgsatid`, `brgharga`, `brggambar`, `brgstok`) VALUES
 ('b3', 'Keyboard', 36, 3, 200000, 'upload/b3.jpg', 13),
-('ere', 'Mouse', 22, 2, 100000, 'upload/ere.jpg', 3423),
 ('KB001', 'Laptop Acer Aspire 5', 36, 3, 12000000, 'upload/KB001.jpg', 1),
 ('KB002', 'Beras 5 Kg', 24, 3, 105000, 'upload/KB002.jpg', 90),
 ('KB004', 'Pulpen Pilot G2', 25, 3, 2000, 'upload/KB004.jpg', 200),
@@ -61,7 +60,9 @@ CREATE TABLE `barangkeluar` (
   `faktur` char(20) NOT NULL,
   `tglfaktur` date NOT NULL,
   `idpel` int(11) NOT NULL,
-  `totalharga` double NOT NULL
+  `totalharga` double NOT NULL,
+  `jumlahuang` double NOT NULL,
+  `sisauang` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -222,6 +223,14 @@ CREATE TABLE `pelanggan` (
   `peltelp` char(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `pelanggan`
+--
+
+INSERT INTO `pelanggan` (`pelid`, `pelnama`, `peltelp`) VALUES
+(4, 'test4', '084324324534'),
+(5, 'test5', '08425345112451');
+
 -- --------------------------------------------------------
 
 --
@@ -257,11 +266,22 @@ INSERT INTO `satuan` (`satid`, `satnama`) VALUES
 --
 
 CREATE TABLE `temp_barangkeluar` (
-  `faktur` char(20) NOT NULL,
-  `tglfaktur` date NOT NULL,
-  `idpel` int(11) NOT NULL,
-  `totalharga` double NOT NULL
+  `id` int(11) NOT NULL,
+  `detfaktur` char(20) NOT NULL,
+  `detbrgkode` char(10) NOT NULL,
+  `dethargajual` double NOT NULL,
+  `detjml` int(11) NOT NULL,
+  `detsubtotal` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `temp_barangkeluar`
+--
+
+INSERT INTO `temp_barangkeluar` (`id`, `detfaktur`, `detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES
+(14, '1710230001', 'b3', 200000, 321, 64200000),
+(15, '1710230001', 'KB001', 12000000, 11, 132000000),
+(16, '1710230001', 'KB007', 1500000, 1, 1500000);
 
 -- --------------------------------------------------------
 
@@ -341,7 +361,7 @@ ALTER TABLE `satuan`
 -- Indexes for table `temp_barangkeluar`
 --
 ALTER TABLE `temp_barangkeluar`
-  ADD PRIMARY KEY (`faktur`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `temp_barangmasuk`
@@ -381,13 +401,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `pelid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pelid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `satuan`
 --
 ALTER TABLE `satuan`
   MODIFY `satid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `temp_barangkeluar`
+--
+ALTER TABLE `temp_barangkeluar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `temp_barangmasuk`

@@ -9,7 +9,7 @@ class ModelBarangKeluar extends Model
     protected $table            = 'barangkeluar';
     protected $primaryKey       = 'faktur';
     protected $allowedFields    = [
-        'faktur', 'tglfaktur','idpel','totalharga'
+        'faktur', 'tglfaktur','idpel','totalharga','jumlahuang','sisauang'
     ];
 
     public function noFaktur($tanggalSekarang)  {

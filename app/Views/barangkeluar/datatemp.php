@@ -12,6 +12,7 @@
         endforeach;
         ?>
     <h3>Rp. <?= number_format($totalHarga,0,",",".")?></h3>
+    <input type="hidden" id="totalHarga" value="<?= $totalHarga; ?>">
     </th>
 </tr>
 </thead>

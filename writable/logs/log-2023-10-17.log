@@ -117,3 +117,71 @@ INFO - 2023-10-17 15:54:29 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-10-17 15:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-17 15:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-10-17 15:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 16:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 16:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 16:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 16:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 16:45:25 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:45:30 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:45:37 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:47:48 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:48:42 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:49:04 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:49:51 --> Undefined variable: json
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: json', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-17 16:50:35 --> Undefined variable: data
+in APPPATH\Controllers\Barangkeluar.php on line 226.
+ 1 APPPATH\Controllers\Barangkeluar.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Controllers\\Barangkeluar.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangkeluar->modalPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')

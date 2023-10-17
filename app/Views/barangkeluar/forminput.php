@@ -88,6 +88,9 @@ Input Transaksi Barang Keluar
             <div class="input-group mb-3">
             <button type="button" class="btn btn-success" title="Simpan Item" id="tombolSimpanItem">
                 <i class="fa fa-save"></i>
+            </button>&nbsp;
+            <button type="button" class="btn btn-info" title="Selesai Transaksi" id="tombolSelesaiTransaksi">
+                Selesai Transaksi
             </button>
             </div>
             
@@ -322,6 +325,36 @@ function tampilDataTemp() {
             }
             });
          })
+
+        //  untuk selesai Transaksi 
+        $('#tombolSelesaiTransaksi').click(function (e) { 
+            e.preventDefault();
+            $.ajax({
+                type: "post",
+                url: "/barangkeluar/modalPembayaran",
+                data: {
+                    nofaktur :$('#nofaktur').val(),
+                    tglfaktur :$('#tglfaktur').val(),
+                    idpelanggan :$('#idpelanggan').val(),
+                    totalharga :$('#totalharga').val(),
+                    // nofaktur :$('#nofaktur').val(),
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.error){
+                        Swal.fire('error',response.error,'error')
+                    }
+                    if(response.data){
+                        $('.viewmodal').html(response.data).show()
+                        $('#modalpembayaran').modal('show');
+                        // Swal.fire('error',response.error,'error')
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+        });
     });
 </script>
 

@@ -206,5 +206,41 @@ class Barangkeluar extends BaseController
         }
     }
 
+    public function modalPembayaran()
+    {
+        $nofaktur = $this->request->getPost('nofaktur');
+        $tglfaktur = $this->request->getPost('tglfaktur');
+        $idpelanggan = $this->request->getPost('idpelanggan');
+        $totalharga = $this->request->getPost('totalharga');
+    
+        $modelTemp = new ModelTempBarangKeluar();
+        $cekdata = $modelTemp->tampilDataTemp($nofaktur);
+    
+        
+    
+        if ($cekdata->getNumRows() > 0) {
+            // Proses data jika item ada
+            $data =[
+                'nofaktur'=>$nofaktur,
+                'totalharga'=>$totalharga,
+                'tglfaktur'=>$tglfaktur,
+                'idpelanggan'=>$idpelanggan,
+            ];
+
+            $json =[
+                'data'=> view('barangkeluar/modalpembayaran', $data)
+            ];
+           
+        } else {
+            $json = [
+                'error' => 'Maaf item belum ada'
+                // tambahkan data lainnya yang diperlukan di sini
+            ];
+        }
+    
+        echo json_encode($json);
+    }
+    
+
 
 }
