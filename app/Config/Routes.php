@@ -72,6 +72,8 @@ $routes->post('/barangkeluar/tampilDataTemp', 'Barangkeluar::tampilDataTemp');
 $routes->post('/barangkeluar/ambilDataBarang', 'Barangkeluar::ambilDataBarang');
 $routes->post('/barangkeluar/simpanItem', 'Barangkeluar::simpanItem');
 $routes->post('/barangkeluar/hapusItem', 'Barangkeluar::hapusItem');
+$routes->get('/barangkeluar/modalCariBarang', 'Barangkeluar::modalCariBarang');
+$routes->post('/barangkeluar/listDataBarang', 'Barangkeluar::listDataBarang');
 
 
 // Pelanggan 

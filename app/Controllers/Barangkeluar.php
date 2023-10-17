@@ -5,7 +5,9 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\Modelbarang;
 use App\Models\ModelBarangKeluar;
+use App\Models\ModelDataBarang;
 use App\Models\ModelTempBarangKeluar;
+use Config\Services;
 
 class Barangkeluar extends BaseController
 {
@@ -116,17 +118,31 @@ class Barangkeluar extends BaseController
             //membuat model barang model
             $modalTempBarangKeluar = new ModelTempBarangKeluar();
 
-            $modalTempBarangKeluar->insert([
-                'detfaktur'=>$nofaktur,
-                'detbrgkode'=>$kodebarang,
-                'dethargajual'=>$hargajual,
-                'detjml'=>$jml,
-                'detsubtotal'=>intval($jml) * intval($hargajual),
-            ]);
+            // cek dulu apakah stoknya tersedia 
+            $modelBarang = new Modelbarang();
+            $ambilDataBarang = $modelBarang->find($kodebarang);
+            //ambil stoknya
+            $stokBarang = $ambilDataBarang['brgstok'];
 
-            $json =[
-                'sukses'=>'Item berhasil ditambahkan'
-            ];
+            if($jml>intval($stokBarang)){
+                $json =[
+                    'error'=>'Stok tidak mencukupi...'
+                ];
+            }else{
+                $modalTempBarangKeluar->insert([
+                    'detfaktur'=>$nofaktur,
+                    'detbrgkode'=>$kodebarang,
+                    'dethargajual'=>$hargajual,
+                    'detjml'=>$jml,
+                    'detsubtotal'=>intval($jml) * intval($hargajual),
+                ]);
+    
+                $json =[
+                    'sukses'=>'Item berhasil ditambahkan'
+                ];
+            }
+
+            
 
             echo json_encode($json);
 
@@ -144,6 +160,50 @@ class Barangkeluar extends BaseController
         ];
 
         echo json_encode($json);
+    }
+
+    public function modalCariBarang()  {
+        if($this->request->isAJAX()){
+            $json=[
+                'data' => view('barangkeluar/modalcaribarang')
+            ];
+            echo json_encode($json);
+        }
+    }
+
+    public function listDataBarang() 
+    {
+        $request = Services::request();
+        $datamodel = new ModelDataBarang($request);
+        if ($request->getMethod(true) == 'POST') {
+            $lists = $datamodel->get_datatables();
+            $data = [];
+            $no = $request->getPost("start");
+            foreach ($lists as $list) {
+                $no++;
+                $row = [];
+
+                $tombolPilih = "<button type=\"button\" class=\"btn btn-sm btn-info\" onclick=\"pilih('".$list->brgkode."')\"> Pilih
+                </button>";
+
+              
+
+                $row[] = $no;
+                $row[] = $list->brgkode;
+                $row[] = $list->brgnama;
+                $row[] = number_format($list->brgharga,0,",",".");
+                $row[] = number_format($list->brgstok,0,",",".");
+                $row[] = $tombolPilih;
+                $data[] = $row;
+            }
+            $output = [
+                "draw" => $request->getPost('draw'),
+                "recordsTotal" => $datamodel->count_all(),
+                "recordsFiltered" => $datamodel->count_filtered(),
+                "data" => $data
+            ];
+            echo json_encode($output);
+        }
     }
 
 

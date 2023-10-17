@@ -127,7 +127,12 @@ Input Transaksi Barang Keluar
                 },
                 dataType: "json",
                 success: function (response) {
+                    if(response.error){
+                        Swal.fire('Error',response.error,'error')
+                    }
+
                     if(response.sukses){
+                        Swal.fire('Sukses',response.sukses,'success')
                         tampilDataTemp()
                         kosong()
                     }
@@ -229,6 +234,7 @@ function tampilDataTemp() {
             dataType: "json",
             success: function (response) {
                 $('#nofaktur').val(response.nofaktur);
+                tampilDataTemp()
             },error:function(xhr,ajaxOptions, thrownError){
                 alert(xhr.status + '\n' + thrownError)
                 console.log(xhr.status + '\n' + thrownError)
@@ -242,9 +248,9 @@ function tampilDataTemp() {
         tampilDataTemp()
         // untuk pilih tanggal nnti no fakturnya akan menyesuaikan 
         $('#tglfaktur').change(function (e) { 
-            e.preventDefault();
+            // e.preventDefault();
             buatNofaktur();
-            tampilDataTemp()
+            // tampilDataTemp()
         });
         // untuk menambahkan pelanggan 
         $('#tombolTambahPelanggan').click(function (e) { 
@@ -297,6 +303,25 @@ function tampilDataTemp() {
             simpanItem();
             
         });
+
+        // Tombol cari barang 
+        $('#tombolCariBarang').click(function (e) { 
+            e.preventDefault();
+            $.ajax({
+                url: "/barangkeluar/modalCariBarang",
+                dataType: "json",
+                success: function (response) {
+                   
+                    if(response.data){
+                        $('.viewmodal').html(response.data).show();
+                        $('#modalcaribarang').modal('show');
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+         })
     });
 </script>
 
