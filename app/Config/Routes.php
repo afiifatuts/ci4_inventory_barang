@@ -6,10 +6,13 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Login::index');
+$routes->get('/main/index', 'Main::index');
+// $routes->get('/main', 'Main::index');
 
 // login user
 $routes->post('/login/cekUser', 'Login::cekUser');
 $routes->get('/login/index', 'Login::index');
+$routes->get('/login/keluar', 'Login::keluar');
 // Kategori Page 
 $routes->get('/kategori/index', 'Kategori::index');
 $routes->post('/kategori/index', 'Kategori::index');

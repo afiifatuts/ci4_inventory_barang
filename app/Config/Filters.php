@@ -24,6 +24,9 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'filterAdmin' => \App\Filters\FilterAdmin::class,
+        'filterGudang' => \App\Filters\FilterGudang::class,
+        'filterKasir' => \App\Filters\FilterKasir::class
     ];
 
     /**
@@ -38,11 +41,31 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            //maksudnya semua di filter kecuali yang ada di controller login
+            'filterAdmin'=>[
+                'except'=>['login/*','login','/']
+            ],
+            'filterKasir'=>[
+                'except'=>['login/*','login','/']
+            ],
+            'filterGudang'=>[
+                'except'=>['login/*','login','/']
+            ]
         ],
         'after' => [
+            'filterAdmin'=>[
+                 'except'=>['main/*','satuan/*','kategori/*','barang/*','barangmasuk/*','barangkeluar/*']
+            ],
+            'filterKasir'=>[
+                'except'=>['barangkeluar/*','main/*','main']
+           ],
+           'filterGudang'=>[
+               'except'=>['barangmasuk/*','main/*','main']
+          ],
             'toolbar',
             // 'honeypot',
             // 'secureheaders',
+            
         ],
     ];
 
