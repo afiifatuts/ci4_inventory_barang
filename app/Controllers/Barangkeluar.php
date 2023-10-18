@@ -7,6 +7,7 @@ use App\Models\Modelbarang;
 use App\Models\ModelBarangKeluar;
 use App\Models\ModelDataBarang;
 use App\Models\ModelDetailBarangKeluar;
+use App\Models\ModelPelanggan;
 use App\Models\ModelTempBarangKeluar;
 use Config\Services;
 
@@ -288,11 +289,37 @@ class Barangkeluar extends BaseController
 
             $json = [
                 'sukses'=>'Transaksi berhasil disimpan',
-                'cetakfaktur'=>site_url('barangkeluar/cetakfaktur'.$nofaktur)
+                'cetakfaktur'=>site_url('barangkeluar/cetakFaktur/'.$nofaktur)
             ];
 
             echo json_encode($json);
         }
+    }
+
+    public function cetakFaktur($faktur){
+        $modelBarangKeluar = new ModelBarangKeluar();
+        $modelDetail = new ModelDetailBarangKeluar();
+        $modelPelanggan = new ModelPelanggan();
+
+        $cekData = $modelBarangKeluar->find($faktur);
+        $dataPelanggan = $modelPelanggan->find($cekData['idpel']);
+
+        $namaPelanggan = ($dataPelanggan != null) ? $dataPelanggan['pelnama'] : '-';
+
+        if($cekData != null){
+            $data =[
+                'faktur'=> $faktur,
+                'tanggal'=> $cekData['tglfaktur'],
+                'namapelanggan'=> $namaPelanggan,
+                'detailbarang'=>$modelDetail->tampilDataTemp($faktur),
+                'jumlahuang'=>$cekData['jumlahuang'],
+                'sisauang'=>$cekData['sisauang'],
+            ];
+            return view('barangkeluar/cetakfaktur',$data);
+        }else{
+            return redirect()->to(site_url('barangkeluar/input'));
+        }
+
     }
     
 
