@@ -5,7 +5,11 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Main::index');
+$routes->get('/', 'Login::index');
+
+// login user
+$routes->post('/login/cekUser', 'Login::cekUser');
+$routes->get('/login/index', 'Login::index');
 // Kategori Page 
 $routes->get('/kategori/index', 'Kategori::index');
 $routes->post('/kategori/index', 'Kategori::index');
