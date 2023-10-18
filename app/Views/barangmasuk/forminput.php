@@ -94,7 +94,7 @@ Input Barang Masuk
             },
             dataType: "json",
             success: function (response) {
-                console.log(response)
+                // console.log(response)
                 if(response.data){
                     
                     $('#tampilDataTemp').html(response.data);

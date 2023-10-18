@@ -201,7 +201,6 @@ function kosong(){
 <script>
 function tampilDataTemp() { 
     let nofaktur = $('#nofaktur').val();
-    console.log(nofaktur)
     $.ajax({
         type: "post",
         url: "/barangkeluar/tampilDataTemp",
@@ -336,7 +335,7 @@ function tampilDataTemp() {
                     nofaktur :$('#nofaktur').val(),
                     tglfaktur :$('#tglfaktur').val(),
                     idpelanggan :$('#idpelanggan').val(),
-                    totalharga :$('#totalharga').val(),
+                    totalharga :$('#totalHarga').val(),
                     // nofaktur :$('#nofaktur').val(),
                 },
                 dataType: "json",

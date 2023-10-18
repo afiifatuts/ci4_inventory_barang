@@ -18,5 +18,9 @@ class ModelTempBarangKeluar extends Model
         return $this->table('temp_barangkeluar')->join('barang','detbrgkode=brgkode')->where('detfaktur',$nofaktur)->get();
     }
 
+    public function hapusData($nofaktur){
+        return $this->table('temp_barangkeluar')->delete(['detfaktur'=>$nofaktur]);
+    }
+
    
 }

@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\Modelbarang;
 use App\Models\ModelBarangKeluar;
 use App\Models\ModelDataBarang;
+use App\Models\ModelDetailBarangKeluar;
 use App\Models\ModelTempBarangKeluar;
 use Config\Services;
 
@@ -239,6 +240,59 @@ class Barangkeluar extends BaseController
         }
     
         echo json_encode($json);
+    }
+
+
+    public function simpanPembayaran()  {
+        if($this->request->isAJAX()){
+            $nofaktur = $this->request->getPost('nofaktur');
+            $tglfaktur = $this->request->getPost('tglfaktur');
+            $idpelanggan = $this->request->getPost('idpelanggan');
+            $totalbayar = $this->request->getPost('totalbayar');
+            $jumlahuang = $this->request->getPost('jumlahuang');
+            $sisauang = $this->request->getPost('sisauang');
+
+
+            $modelBarangKeluar = new ModelBarangKeluar();
+
+            //Simpan ke table barang keluar
+            $modelBarangKeluar->insert([
+                'faktur' => $nofaktur,
+                'tglfaktur' => $tglfaktur,
+                'idpel' => $idpelanggan,
+                'totalharga' => $totalbayar,
+                'jumlahuang' => $jumlahuang,
+                'sisauang' => $sisauang,
+            ]);
+
+            $modelTemp = new ModelTempBarangKeluar();
+            $dataTemp = $modelTemp->getWhere(['detfaktur'=>$nofaktur]);
+
+            $fieldDetail =[];
+
+            foreach($dataTemp->getResultArray() as $row){
+                $fieldDetail[]=[
+                    'detfaktur'=>$row['detfaktur'],
+                    'detbrgkode'=>$row['detbrgkode'],
+                    'dethargajual'=>$row['dethargajual'],
+                    'detjml'=>$row['detjml'],
+                    'detsubtotal'=>$row['detsubtotal'],
+                ];
+            }
+
+            $modelDetail = new ModelDetailBarangKeluar();
+            $modelDetail->insertBatch($fieldDetail);
+
+            //Hapus Temp Detail barang keluar
+            $modelTemp->hapusData($nofaktur);
+
+            $json = [
+                'sukses'=>'Transaksi berhasil disimpan',
+                'cetakfaktur'=>site_url('barangkeluar/cetakfaktur'.$nofaktur)
+            ];
+
+            echo json_encode($json);
+        }
     }
     
 
