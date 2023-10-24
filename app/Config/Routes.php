@@ -84,6 +84,8 @@ $routes->post('/barangkeluar/listDataBarang', 'Barangkeluar::listDataBarang');
 $routes->post('/barangkeluar/modalPembayaran', 'Barangkeluar::modalPembayaran');
 $routes->post('/barangkeluar/simpanPembayaran', 'Barangkeluar::simpanPembayaran');
 $routes->get('/barangkeluar/cetakFaktur/(:segment)', 'Barangkeluar::cetakFaktur/$1');
+$routes->post('/barangkeluar/listData', 'Barangkeluar::listData');
+$routes->post('/barangkeluar/hapusTransaksi', 'Barangkeluar::hapusTransaksi');
 
 
 // Pelanggan 

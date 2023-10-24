@@ -21,4 +21,10 @@ class ModelDetailBarangKeluar extends Model
         ->where('detfaktur',$nofaktur)->get();
     }
 
+    // public function hapusDataDetail($faktur)
+    // {
+    //     return $this->table('detail_barangkeluar')->delete(['detfaktur'=>$faktur]);
+   
+    // }
+
 }

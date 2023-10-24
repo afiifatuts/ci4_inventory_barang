@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cetak Struk Barang Keluar</title>
 </head>
-<body>
+<body onload="window.print();">
     <table border="0" style="text-align: center; width:100%;">
         <tr>
             <td colspan="2">
@@ -42,7 +42,7 @@
                     foreach ($detailbarang->getResultArray() as $row):
                         $totalItem += $row['detjml'];
                         $jmlItem++;
-                        $totalItem += $row['detsubtotal'];
+                        $totalHarga += $row['detsubtotal'];
                     ?>
                         <tr>
                             <td><?= $row['brgnama'];?></td>
@@ -59,6 +59,41 @@
                             </td>
                         </tr>
                     <?php endforeach;?>
+                    <tr>
+                        <td colspan="3">
+                            <hr style="border:none; border-top:1px dashed #000;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Jml.Item : <?= number_format($jmlItem,0,",",".").'('.number_format($totalItem,0,",",".").')'?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr style="border:none; border-top:1px dashed #000;">
+                        </td>
+                    </tr>
+                    <tr  style="text-align:right;">
+                        <td></td>
+                        <td>Total Harga :</td>
+                        <td><?= number_format($totalHarga,0,",",".")?></td>
+                    </tr>
+                    <tr  style="text-align:right;">
+                        <td></td>
+                        <td>Jml.Uang :</td>
+                        <td><?= number_format($jumlahuang,0,",",".")?></td>
+                    </tr>
+                    <tr style="text-align:right;">
+                        <td></td>
+                        <td>Kembalian :</td>
+                        <td><?= number_format($sisauang,0,",",".")?></td>
+                    </tr>
+                    <tr style="text-align:center;">
+                        <td colspan="3">
+                            Terimakasih Atas Kunjungan Anda
+                        </td>
+                    </tr>
                 </table>
             </td>
         </tr>

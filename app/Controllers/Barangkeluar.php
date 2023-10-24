@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\Modelbarang;
 use App\Models\ModelBarangKeluar;
 use App\Models\ModelDataBarang;
+use App\Models\ModelDataBarangKeluar;
 use App\Models\ModelDetailBarangKeluar;
 use App\Models\ModelPelanggan;
 use App\Models\ModelTempBarangKeluar;
@@ -320,6 +321,67 @@ class Barangkeluar extends BaseController
             return redirect()->to(site_url('barangkeluar/input'));
         }
 
+    }
+
+    public function listData(){
+        $tglawal = $this->request->getPost('tglawal');
+        $tglakhir = $this->request->getPost('tglakhir');
+
+        $request = Services::request();
+        $datamodel = new ModelDataBarangKeluar($request);
+        if ($request->getMethod(true) == 'POST') {
+            $lists = $datamodel->get_datatables($tglawal,$tglakhir);
+            $data = [];
+            $no = $request->getPost("start");
+            foreach ($lists as $list) {
+                $no++;
+                $row = [];
+
+                $tombolCetak = "<button type=\"button\" class=\"btn btn-sm btn-info\" onclick=\"cetak('".$list->faktur."')\"> <i class=\" fa fa-print\"></i>
+                </button>";
+
+                $tombolHapus = "<button type=\"button\" class=\"btn btn-sm btn-danger\" onclick=\"hapus('".$list->faktur."')\"> <i class=\" fa fa-trash-alt\"></i>
+                </button>";
+
+                $row[] = $no;
+                $row[] = $list->faktur;
+                $row[] = $list->tglfaktur;
+                $row[] = $list->pelnama;
+                
+                $row[] = number_format($list->totalharga,0,",",".");;
+                $row[] =$tombolCetak ." ".$tombolHapus;
+                $data[] = $row;
+            }
+            $output = [
+                "draw" => $request->getPost('draw'),
+                "recordsTotal" => $datamodel->count_all($tglawal,$tglakhir),
+                "recordsFiltered" => $datamodel->count_filtered($tglawal,$tglakhir),
+                "data" => $data
+            ];
+            echo json_encode($output);
+        }
+    }
+    
+    public function hapusTransaksi()
+    {
+        if($this->request->isAJAX()){
+            $faktur = $this->request->getPost('faktur');
+
+            $modelDetail = new ModelDetailBarangKeluar();
+            $modelBarangKeluar = new ModelBarangKeluar();
+
+            $db = \Config\Database::connect();
+
+            $db->table('detail_barangkeluar')->delete(['detfaktur'=>$faktur]);
+            $modelBarangKeluar->delete($faktur);
+
+            //hapus detail 
+            // $modelDetail->hapusDataDetail($faktur);
+            $json =[
+                'sukses'=>'Transaksi berhasil dihapus'
+            ];
+            echo json_encode($json);
+        }
     }
     
 
