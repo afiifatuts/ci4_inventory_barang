@@ -1,0 +1,1099 @@
+ERROR - 2023-10-11 01:48:31 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbgudang', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-11 01:48:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 01:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 01:48:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbgudang', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-10-11 01:48:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `barang`
+JOIN `kategori` ON `brgkatid`=`katid`
+JOIN `satuan` ON `brgsatid`=`satid`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 02:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 02:07:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbgudang', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-10-11 02:07:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `barang`
+JOIN `kategori` ON `brgkatid`=`katid`
+JOIN `satuan` ON `brgsatid`=`satid`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 02:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 02:08:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbgudang', 3306, '', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-10-11 02:08:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `barang`
+JOIN `kategori` ON `brgkatid`=`katid`
+JOIN `satuan` ON `brgsatid`=`satid`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-11 03:42:41 --> mysqli_sql_exception: Table 'dbgudang.temp_barangmasuk' doesn't exist in engine in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-11 03:42:41 --> Table 'dbgudang.temp_barangmasuk' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 03:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 03:42:44 --> mysqli_sql_exception: Table 'dbgudang.barang' doesn't exist in engine in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-11 03:42:44 --> Table 'dbgudang.barang' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `barang`
+JOIN `kategori` ON `brgkatid`=`katid`
+JOIN `satuan` ON `brgsatid`=`satid`', [], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 03:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 03:42:59 --> mysqli_sql_exception: Table 'dbgudang.barang' doesn't exist in engine in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barang->index()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-11 03:42:59 --> Table 'dbgudang.barang' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `barang`
+JOIN `kategori` ON `brgkatid`=`katid`
+JOIN `satuan` ON `brgsatid`=`satid`', [], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Barang.php(29): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-11 03:43:01 --> mysqli_sql_exception: Table 'dbgudang.temp_barangmasuk' doesn't exist in engine in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-11 03:43:01 --> Table 'dbgudang.temp_barangmasuk' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+ERROR - 2023-10-11 03:43:03 --> mysqli_sql_exception: Table 'dbgudang.satuan' doesn't exist in engine in C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\belajar\ci4_inventory_barang\app\Controllers\Satuan.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(919): App\Controllers\Satuan->index()
+#8 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satuan))
+#9 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\belajar\ci4_inventory_barang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\belajar\ci4_inventory_barang\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-11 03:43:03 --> Table 'dbgudang.satuan' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `satuan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Satuan.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Satuan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satuan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 03:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-11 03:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-11 03:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-11 03:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-11 03:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-11 04:52:24 --> Undefined variable: number_format
+in APPPATH\Views\barangmasuk\datatemp.php on line 23.
+ 1 APPPATH\Views\barangmasuk\datatemp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: number_format', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Views\\barangmasuk\\datatemp.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Views\\barangmasuk\\datatemp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('barangmasuk/datatemp', [], true)
+ 5 APPPATH\Controllers\Barangmasuk.php(28): view('barangmasuk/datatemp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-11 04:53:42 --> Undefined variable: number_format
+in APPPATH\Views\barangmasuk\datatemp.php on line 23.
+ 1 APPPATH\Views\barangmasuk\datatemp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: number_format', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Views\\barangmasuk\\datatemp.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Views\\barangmasuk\\datatemp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('barangmasuk/datatemp', [], true)
+ 5 APPPATH\Controllers\Barangmasuk.php(28): view('barangmasuk/datatemp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+CRITICAL - 2023-10-11 04:56:19 --> Undefined variable: number_format
+in APPPATH\Views\barangmasuk\datatemp.php on line 23.
+ 1 APPPATH\Views\barangmasuk\datatemp.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: number_format', 'C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Views\\barangmasuk\\datatemp.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\app\\Views\\barangmasuk\\datatemp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('barangmasuk/datatemp', [], true)
+ 5 APPPATH\Controllers\Barangmasuk.php(28): view('barangmasuk/datatemp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\belajar\\ci4_inventory_barang\\public\\index.php')
+INFO - 2023-10-11 04:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:11:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 14:11:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-11 14:11:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `kategori`', [], false)
+ 3 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-11 14:11:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 14:11:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-11 14:11:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `kategori`', [], false)
+ 3 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-11 14:11:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 14:11:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-11 14:11:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `kategori`', [], false)
+ 3 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-11 14:11:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 14:11:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-11 14:11:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `kategori`', [], false)
+ 3 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-11 14:11:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 14:11:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-11 14:11:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `kategori`', [], false)
+ 3 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-11 14:12:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:12:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:12:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:31:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:33:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:33:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 14:34:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 14:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:00:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:00:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:02:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 22:08:36 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-10-11 22:08:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php')
+ERROR - 2023-10-11 22:08:47 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-10-11 22:08:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php')
+ERROR - 2023-10-11 22:09:31 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-10-11 22:09:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php')
+ERROR - 2023-10-11 22:09:34 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-10-11 22:09:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php')
+INFO - 2023-10-11 22:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-11 22:09:39 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Kategori->index()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-10-11 22:09:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `kategori`', [], false)
+ 3 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Kategori.php(28): CodeIgniter\BaseModel->paginate(5, 'kategori')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php')
+ERROR - 2023-10-11 22:09:43 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', Array)
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-10-11 22:09:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangmasuk`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Models/Modeltempbarangmasuk.php(18): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH/Controllers/Barangmasuk.php(24): App\Models\Modeltempbarangmasuk->tampilDataTemp('')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangmasuk->dataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangmasuk))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/public/index.php')
+WARNING - 2023-10-11 22:10:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:10:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:11:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:11:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:11:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:13:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:13:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:13:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:13:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:13:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:13:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:14:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-11 22:14:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-11 22:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

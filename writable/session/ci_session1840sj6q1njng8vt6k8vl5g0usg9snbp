@@ -1,0 +1,5 @@
+__ci_last_regenerate|i:1696839605;_ci_previous_url|s:36:"http://localhost:8080/kategori/index";sukses|s:298:"<div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-check"></i> Sukses!</h5>
+                Data kategori berhasil ditambahkan ...
+              </div>";__ci_vars|a:1:{s:6:"sukses";s:3:"old";}
