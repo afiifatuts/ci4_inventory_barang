@@ -1,0 +1,1480 @@
+INFO - 2023-10-26 03:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:05:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:09:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 03:09:28 --> Undefined variable $base_url
+in APPPATH/Views/kategori/viewkategori.php on line 73.
+ 1 APPPATH/Views/kategori/viewkategori.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/kategori/viewkategori.php', 73)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/kategori/viewkategori.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('kategori/viewkategori', [], true)
+ 5 APPPATH/Controllers/Kategori.php(38): view('kategori/viewkategori', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:10:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 03:10:09 --> Undefined variable $base_url
+in APPPATH/Views/kategori/viewkategori.php on line 73.
+ 1 APPPATH/Views/kategori/viewkategori.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/kategori/viewkategori.php', 73)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/kategori/viewkategori.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('kategori/viewkategori', [], true)
+ 5 APPPATH/Controllers/Kategori.php(38): view('kategori/viewkategori', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:10:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 03:10:25 --> syntax error, unexpected token "echo"
+in APPPATH/Views/kategori/viewkategori.php on line 73.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('kategori/viewkategori', [], true)
+ 3 APPPATH/Controllers/Kategori.php(38): view('kategori/viewkategori', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:10:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 03:10:50 --> Undefined variable $base_url
+in APPPATH/Views/kategori/viewkategori.php on line 73.
+ 1 APPPATH/Views/kategori/viewkategori.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/kategori/viewkategori.php', 73)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/kategori/viewkategori.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('kategori/viewkategori', [], true)
+ 5 APPPATH/Controllers/Kategori.php(38): view('kategori/viewkategori', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kategori->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:11:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:12:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:12:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:12:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:12:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Kategori::$kategori is deprecated in APPPATH/Controllers/Kategori.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Kategori->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:13:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:14:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:14:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:14:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:14:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Satuan::$satuan is deprecated in APPPATH/Controllers/Satuan.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Satuan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:15:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:17:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:17:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:17:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:17:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:18:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:18:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:18:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:19:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:20:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:20:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:20:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:20:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barang is deprecated in APPPATH/Controllers/Barang.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:42:21 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:44:01 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:44:02 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:44:02 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:44:06 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:44:06 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:44:06 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:44:12 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:44:12 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:44:13 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:44:25 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:44:26 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:44:26 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:45:01 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:45:01 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:45:01 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:45:10 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:45:10 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:45:10 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:46:51 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:46:52 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'where clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:46:52 --> Unknown column 'detfaktur' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `detfaktur` = :detfaktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:51:15 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:51:15 --> mysqli_sql_exception: Unknown column 'detbrgkode' in 'on clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:51:15 --> Unknown column 'detbrgkode' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `faktur` = :faktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:53:35 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:53:35 --> mysqli_sql_exception: Unknown column 'detbrgkode' in 'on clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:53:35 --> Unknown column 'detbrgkode' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `detbrgkode`=`brgkode`
+WHERE `faktur` = :faktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:54:33 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:54:34 --> mysqli_sql_exception: Unknown column 'detbrgkode' in 'on clause' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-26 03:54:34 --> Unknown column 'detbrgkode' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `temp_barangkeluar`
+JOIN `barang` ON `brgkode`=`detbrgkode`
+WHERE `faktur` = :faktur:', [...], false)
+ 2 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/ModelTempBarangKeluar.php(18): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:57:42 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 03:58:38 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `te...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 03:58:38 --> Unknown column 'detfaktur' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temp_barangkeluar` (`detfaktur`, `detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES (:detfaktur:, :detbrgkode:, :dethargajual:, :detjml:, :detsubtotal:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:58:59 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 03:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:59:39 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 03:59:39 --> Undefined variable $faktur
+in APPPATH/Models/ModelTempBarangKeluar.php on line 20.
+ 1 APPPATH/Models/ModelTempBarangKeluar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $faktur', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php', 20)
+ 2 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 03:59:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 03:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 03:59:48 --> Undefined variable $faktur
+in APPPATH/Models/ModelTempBarangKeluar.php on line 20.
+ 1 APPPATH/Models/ModelTempBarangKeluar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $faktur', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Models/ModelTempBarangKeluar.php', 20)
+ 2 APPPATH/Controllers/Barangkeluar.php(69): App\Models\ModelTempBarangKeluar->tampilDataTemp('2610230001')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:00:05 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:01:58 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 04:03:17 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `te...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 04:03:17 --> Unknown column 'detfaktur' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temp_barangkeluar` (`detfaktur`, `detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES (:detfaktur:, :detbrgkode:, :dethargajual:, :detjml:, :detsubtotal:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 04:04:02 --> mysqli_sql_exception: Unknown column 'detfaktur' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `te...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 04:04:02 --> Unknown column 'detfaktur' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temp_barangkeluar` (`detfaktur`, `detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES (:detfaktur:, :detbrgkode:, :dethargajual:, :detjml:, :detsubtotal:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:06:07 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 04:06:21 --> mysqli_sql_exception: Unknown column 'dethargajual' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `te...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 04:06:21 --> Unknown column 'dethargajual' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temp_barangkeluar` (`detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES (:detbrgkode:, :dethargajual:, :detjml:, :detsubtotal:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:07:14 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 04:07:22 --> mysqli_sql_exception: Unknown column 'detjml' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `te...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 04:07:22 --> Unknown column 'detjml' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temp_barangkeluar` (`detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES (:detbrgkode:, :dethargajual:, :detjml:, :detsubtotal:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:08:04 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 04:08:13 --> mysqli_sql_exception: Unknown column 'detsubtotal' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `te...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 04:08:13 --> Unknown column 'detsubtotal' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `temp_barangkeluar` (`detbrgkode`, `dethargajual`, `detjml`, `detsubtotal`) VALUES (:detbrgkode:, :dethargajual:, :detjml:, :detsubtotal:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(135): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanItem()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:08:44 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:10:23 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:10:34 --> Undefined array key "id"
+in APPPATH/Views/barangkeluar/datatemp.php on line 43.
+ 1 APPPATH/Views/barangkeluar/datatemp.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php', 43)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('barangkeluar/datatemp', [], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(75): view('barangkeluar/datatemp', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:11:10 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:11:11 --> Undefined array key "id"
+in APPPATH/Views/barangkeluar/datatemp.php on line 43.
+ 1 APPPATH/Views/barangkeluar/datatemp.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php', 43)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('barangkeluar/datatemp', [], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(75): view('barangkeluar/datatemp', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:11:32 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:11:33 --> Undefined array key "id"
+in APPPATH/Views/barangkeluar/datatemp.php on line 43.
+ 1 APPPATH/Views/barangkeluar/datatemp.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php', 43)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('barangkeluar/datatemp', [], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(75): view('barangkeluar/datatemp', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:11:48 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:11:49 --> Undefined array key "id"
+in APPPATH/Views/barangkeluar/datatemp.php on line 43.
+ 1 APPPATH/Views/barangkeluar/datatemp.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php', 43)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('barangkeluar/datatemp', [], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(75): view('barangkeluar/datatemp', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:12:49 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:12:59 --> Undefined array key "id"
+in APPPATH/Views/barangkeluar/datatemp.php on line 43.
+ 1 APPPATH/Views/barangkeluar/datatemp.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php', 43)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('barangkeluar/datatemp', [], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(75): view('barangkeluar/datatemp', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:13:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:13:25 --> Undefined array key "id"
+in APPPATH/Views/barangkeluar/datatemp.php on line 43.
+ 1 APPPATH/Views/barangkeluar/datatemp.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php', 43)
+ 2 SYSTEMPATH/View/View.php(226): include('/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Views/barangkeluar/datatemp.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('barangkeluar/datatemp', [], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(75): view('barangkeluar/datatemp', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->tampilDataTemp()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:16:53 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 04:17:12 --> mysqli_sql_exception: Unknown column 'jumlahuang' in 'field list' in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php(261): CodeIgniter\Model->insert(Array)
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanPembayaran()
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-26 04:17:12 --> Unknown column 'jumlahuang' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barangkeluar` (`faktur`, `tglfaktur`, `idpel`, `totalharga`, `jumlahuang`, `sisauang`) VALUES (:faktur:, :tglfaktur:, :idpel:, :totalharga:, :jumlahuang:, :sisauang:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Barangkeluar.php(261): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->simpanPembayaran()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 04:19:21 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:20:12 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Barangkeluar.php on line 400.
+ 1 APPPATH/Controllers/Barangkeluar.php(400): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 400)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->edit('2610230001')
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-26 04:20:26 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Barangkeluar.php on line 400.
+ 1 APPPATH/Controllers/Barangkeluar.php(400): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 400)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->edit('2610230001')
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 04:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 04:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

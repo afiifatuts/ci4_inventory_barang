@@ -49,7 +49,7 @@
         $('#iddetail').val(id);
         $.ajax({
             type: "post",
-            url: "/barangmasuk/editItem",
+            url: "<?= base_url() ?>/barangmasuk/editItem",
             data: {
                 iddetail: $('#iddetail').val()
             },
@@ -90,7 +90,7 @@
         if (result.isConfirmed) {
            $.ajax({
             type: "post",
-            url: "/barangmasuk/hapusItemDetail",
+            url: "<?= base_url() ?>/barangmasuk/hapusItemDetail",
             data: {
                 id:id,
                 faktur : $('#faktur').val()

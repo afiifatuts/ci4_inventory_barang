@@ -5,7 +5,7 @@ Input Barang Masuk
 <?= $this->endSection('judul') ?>
 
 <?= $this->section('subjudul') ?>
-<button type="button" class="btn btn-warning" onclick="location.href=('/barangmasuk/data')">
+<button type="button" class="btn btn-warning" onclick="location.href=('<?= base_url() ?>/barangmasuk/data')">
     <i class="fa fa-backward"></i> Kembali
 </button>
 <?= $this->endSection('subjudul') ?>
@@ -88,7 +88,7 @@ Input Barang Masuk
 
         $.ajax({
             type: "post",
-            url: "/barangmasuk/dataTemp",
+            url: "<?= base_url() ?>/barangmasuk/dataTemp",
             data: {
                 faktur:faktur
             },
@@ -125,7 +125,7 @@ function kosong(){
             // alert("hello");
             $.ajax({
                 type: "post",
-                url: "/barangmasuk/ambilDataBarang",
+                url: "<?= base_url() ?>/barangmasuk/ambilDataBarang",
                 data: {
                     kodebarang :kodebarang
                 },
@@ -201,7 +201,7 @@ function kosong(){
       }else{
           $.ajax({
             type: "post",
-            url: "/barangmasuk/simpanTemp",
+            url: "<?= base_url() ?>/barangmasuk/simpanTemp",
             data: {
               faktur:faktur,
               kdbarang:kdbarang,
@@ -238,7 +238,7 @@ function kosong(){
     $('#tombolCariBarang').click(function (e) { 
       e.preventDefault();
       $.ajax({
-        url: "/barangmasuk/cariDataBarang",
+        url: "<?= base_url() ?>/barangmasuk/cariDataBarang",
         dataType: "json",
         success: function (response) {
           if(response.data){
@@ -278,7 +278,7 @@ function kosong(){
         if (result.isConfirmed) {
          $.ajax({
           type: "post",
-          url: "/barangmasuk/selesaiTransaksi",
+          url: "<?= base_url() ?>/barangmasuk/selesaiTransaksi",
           data: {
             faktur:faktur,
             tglfaktur: $('#tglfaktur').val()

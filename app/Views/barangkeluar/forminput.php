@@ -5,7 +5,7 @@ Input Transaksi Barang Keluar
 <?= $this->endSection('judul') ?>
 
 <?= $this->section('subjudul') ?>
-<button type="button" class="btn btn-warning" onclick="location.href=('/barangkeluar/data')">
+<button type="button" class="btn btn-warning" onclick="location.href=('<?= base_url() ?>/barangkeluar/data')">
     <i class="fa fa-backward"></i> Kembali
 </button>
 <?= $this->endSection('subjudul') ?>
@@ -120,7 +120,7 @@ Input Transaksi Barang Keluar
         }else{
             $.ajax({
                 type: "post",
-                url: "/barangkeluar/simpanItem",
+                url: "<?= base_url() ?>/barangkeluar/simpanItem",
                 data: {
                     nofaktur:nofaktur,
                     kodebarang:kodebarang,
@@ -170,7 +170,7 @@ function kosong(){
         }else{
         $.ajax({
             type: "post",
-            url: "/barangkeluar/ambilDataBarang",
+            url: "<?= base_url() ?>/barangkeluar/ambilDataBarang",
             data: {
                 kodebarang:kodebarang 
             },
@@ -203,7 +203,7 @@ function tampilDataTemp() {
     let nofaktur = $('#nofaktur').val();
     $.ajax({
         type: "post",
-        url: "/barangkeluar/tampilDataTemp",
+        url: "<?= base_url() ?>/barangkeluar/tampilDataTemp",
         data: {
             nofaktur:nofaktur 
         },
@@ -229,7 +229,7 @@ function tampilDataTemp() {
         let tanggal = $('#tglfaktur').val();
         $.ajax({
             type: "post",
-            url: "/barangkeluar/buatNofaktur",
+            url: "<?= base_url() ?>/barangkeluar/buatNofaktur",
             data: {
                 tanggal:tanggal  
             },
@@ -258,7 +258,7 @@ function tampilDataTemp() {
         $('#tombolTambahPelanggan').click(function (e) { 
             e.preventDefault();
             $.ajax({
-                url: "/pelanggan/formtambah",
+                url: "<?= base_url() ?>/pelanggan/formtambah",
                 dataType: "json",
                 success: function (response) {
                     if (response.data){
@@ -277,7 +277,7 @@ function tampilDataTemp() {
         $('#tombolCariPelanggan').click(function (e) { 
             e.preventDefault();
            $.ajax({
-            url: "/pelanggan/modalData",
+            url: "<?= base_url() ?>/pelanggan/modalData",
             dataType: "json",
             success: function (response) {
                 if(response.data){
@@ -310,7 +310,7 @@ function tampilDataTemp() {
         $('#tombolCariBarang').click(function (e) { 
             e.preventDefault();
             $.ajax({
-                url: "/barangkeluar/modalCariBarang",
+                url: "<?= base_url() ?>/barangkeluar/modalCariBarang",
                 dataType: "json",
                 success: function (response) {
                    
@@ -330,7 +330,7 @@ function tampilDataTemp() {
             e.preventDefault();
             $.ajax({
                 type: "post",
-                url: "/barangkeluar/modalPembayaran",
+                url: "<?= base_url() ?>/barangkeluar/modalPembayaran",
                 data: {
                     nofaktur :$('#nofaktur').val(),
                     tglfaktur :$('#tglfaktur').val(),

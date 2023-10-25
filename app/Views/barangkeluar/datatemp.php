@@ -66,7 +66,7 @@
         if (result.isConfirmed) {
             $.ajax({
                 type: "post",
-                url: "/barangkeluar/hapusItem",
+                url: "<?= base_url() ?>/barangkeluar/hapusItem",
                 data: {
                     id:id
                 },

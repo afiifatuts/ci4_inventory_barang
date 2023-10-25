@@ -15,7 +15,10 @@ class ModelTempBarangKeluar extends Model
 
     // join sama table barang supaya nama barangnya tampil
     public function tampilDataTemp($nofaktur) {
-        return $this->table('temp_barangkeluar')->join('barang','detbrgkode=brgkode')->where('detfaktur',$nofaktur)->get();
+        // return $this->table('temp_barangkeluar')->join('barang','detbrgkode=brgkode')->where('detfaktur',$nofaktur)->get();
+        return $this->table('temp_barangkeluar')->join('barang','brgkode=detbrgkode')->where([
+            'detfaktur'=>$nofaktur
+        ])->get();
     }
 
     public function hapusData($nofaktur){

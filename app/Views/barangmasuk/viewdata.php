@@ -5,7 +5,7 @@ Data Transaksi Barang Masuk
 <?= $this->endSection('judul') ?>
 
 <?= $this->section('subjudul') ?>
-<button type="button" class="btn btn-primary" onclick="location.href=('/barangmasuk/index')">
+<button type="button" class="btn btn-primary" onclick="location.href=('<?= base_url() ?>/barangmasuk/index')">
     <i class="fa fa-plus-circle"></i> Input Transaksi
 </button>
 <?= $this->endSection('subjudul') ?>
@@ -89,7 +89,7 @@ function hapustransaksi(faktur){
         if (result.isConfirmed) {
            $.ajax({
             type: "post",
-            url: "/barangmasuk/hapusTransaksi",
+            url: "<?= base_url() ?>/barangmasuk/hapusTransaksi",
             data: {
                 // id:id,
                 faktur :faktur
@@ -120,7 +120,7 @@ function hapustransaksi(faktur){
 <script>
   //untuk edit data per faktur
   function editbarang(faktur){
-    window.location.href = ('/barangmasuk/edit/')+faktur;
+    window.location.href = ('<?= base_url() ?>/barangmasuk/edit/')+faktur;
 
   }
 </script>

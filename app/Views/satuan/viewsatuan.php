@@ -41,7 +41,7 @@ Manajemen Data Satuan
                 onclick="edit(`<?= $row['satid']?>`)">
                     <i class="fa fa-edit"></i>
                 </button>
-                <form method="POST" action="/satuan/hapus/<?= $row['satid']?>" style="display:inline;" onsubmit="hapus()">
+                <form method="POST" action="<?= base_url() ?>/satuan/hapus/<?= $row['satid']?>" style="display:inline;" onsubmit="hapus()">
                 <input type="hidden" value="DELETE" name="_method">
                 <button type="submit" class="btn btn-danger" title="Hapus Data">
                     <i class="fa fa-trash-alt"></i>
@@ -57,7 +57,7 @@ Manajemen Data Satuan
 
 <script>
     function edit(id) { 
-        window.location=('/satuan/formedit/'+id);
+        window.location=("<?= base_url() ?>"+'/satuan/formedit/'+id);
  }
  function hapus() { 
     pesan =confirm('Yakin data satuan dihapus?');

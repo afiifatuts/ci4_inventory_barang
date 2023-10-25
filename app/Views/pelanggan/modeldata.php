@@ -46,7 +46,7 @@
             "serverSide":true,
             "order":[],
             "ajax":{
-                "url":"/pelanggan/listData",
+                "url":"<?= base_url()?>/pelanggan/listData",
                 "type":"POST",
             },
             "columnDefs":[{
@@ -81,7 +81,7 @@ function pilih(id,nama){
         if (result.isConfirmed) {
             $.ajax({
                 type: "post",
-                url: "/pelanggan/hapus",
+                url: "<?= base_url()?>/pelanggan/hapus",
                 data: {
                     id:id 
                 }, 

@@ -51,7 +51,7 @@ Manajemen Data Kategori
             onclick="edit(`<?= $row['katid']?>`)">
                 <i class="fa fa-edit"></i>
             </button>
-            <form method="POST" action="/kategori/hapus/<?= $row['katid']?>" style="display:inline;" onsubmit="hapus()">
+            <form method="POST" action="<?= base_url() ?>/kategori/hapus/<?= $row['katid']?>" style="display:inline;" onsubmit="hapus()">
             <input type="hidden" value="DELETE" name="_method">
             <button type="submit" class="btn btn-danger" title="Hapus Data">
                 <i class="fa fa-trash-alt"></i>
@@ -70,7 +70,7 @@ Manajemen Data Kategori
 
 <script>
     function edit(id) { 
-        window.location=('/kategori/formedit/'+id);
+        window.location=("<?= base_url() ?>"+'/kategori/formedit/'+id);
  }
  function hapus() { 
     pesan =confirm('Yakin data kategori dihapus?');

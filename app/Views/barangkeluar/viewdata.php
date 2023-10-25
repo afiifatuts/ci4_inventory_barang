@@ -5,7 +5,7 @@ Data Transaksi Barang Keluar
 <?= $this->endSection('judul') ?>
 
 <?= $this->section('subjudul') ?>
-<button type="button" class="btn btn-primary" onclick="location.href=('/barangkeluar/input')">
+<button type="button" class="btn btn-primary" onclick="location.href=('<?= base_url() ?>/barangkeluar/input')">
     <i class="fa fa-plus-circle"></i> Input Transaksi
 </button>
 <?= $this->endSection('subjudul') ?>
@@ -63,7 +63,7 @@ Data Transaksi Barang Keluar
             "serverSide":true,
             "order":[],
             "ajax":{
-                "url":"/barangkeluar/listData",
+                "url":"<?= base_url() ?>/barangkeluar/listData",
                 "type":"POST",
                 "data":{
                     tglawal:$('#tglawal').val(),
@@ -91,7 +91,7 @@ Data Transaksi Barang Keluar
 <!-- Cetak  -->
 <script>
     function cetak(faktur) { 
-        window.location.href = ('/barangkeluar/cetakFaktur/')+faktur
+        window.location.href = ('<?= base_url() ?>/barangkeluar/cetakFaktur/')+faktur
      }
 </script>
 <!-- Hapus  -->
@@ -109,7 +109,7 @@ Data Transaksi Barang Keluar
         if (result.isConfirmed) {
             $.ajax({
                 type: "post",
-                url: "/barangkeluar/hapusTransaksi",
+                url: "<?= base_url() ?>/barangkeluar/hapusTransaksi",
                 data: {
                     faktur:faktur 
                 },
@@ -137,7 +137,7 @@ Data Transaksi Barang Keluar
 <!-- edit  -->
 <script>
     function edit(faktur) {
-        window.location.href=('/barangkeluar/edit/')+faktur
+        window.location.href=('<?= base_url() ?>/barangkeluar/edit/')+faktur
     }
 </script>
 <?= $this->endSection('isi') ?>

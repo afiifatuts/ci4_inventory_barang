@@ -34,7 +34,7 @@
         let cari = $('#cari').val();
         $.ajax({
             type: "post",
-            url: "/barangmasuk/detailCariBarang",
+            url: "<?= base_url() ?>/barangmasuk/detailCariBarang",
             data: {
                 cari:cari
             },
