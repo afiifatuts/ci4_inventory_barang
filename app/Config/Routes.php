@@ -86,6 +86,10 @@ $routes->post('/barangkeluar/simpanPembayaran', 'Barangkeluar::simpanPembayaran'
 $routes->get('/barangkeluar/cetakFaktur/(:segment)', 'Barangkeluar::cetakFaktur/$1');
 $routes->post('/barangkeluar/listData', 'Barangkeluar::listData');
 $routes->post('/barangkeluar/hapusTransaksi', 'Barangkeluar::hapusTransaksi');
+$routes->get('/barangkeluar/edit/(:segment)', 'Barangkeluar::edit/$1');
+$routes->post('/barangkeluar/ambilTotalHarga', 'Barangkeluar::ambilTotalHarga');
+$routes->post('/barangkeluar/tampilDataDetail', 'Barangkeluar::tampilDataDetail');
+$routes->post('/barangkeluar/hapusItemDetail', 'Barangkeluar::hapusItemDetail');
 
 
 // Pelanggan 
@@ -95,3 +99,14 @@ $routes->get('/pelanggan/modalData', 'Pelanggan::modalData');
 $routes->post('/pelanggan/listData', 'Pelanggan::listData');
 $routes->post('/pelanggan/hapus', 'Pelanggan::hapus');
 
+
+
+
+// $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
+//     $routes->match(["get", "post"], "/", "Export_absen::index");
+//     $routes->match(["get", "post"], "display", "Export_absen::display");
+//     $routes->match(["get", "post"], "export_csv", "Export_absen::exportCsv");
+//     $routes->match(["get", "post"], "delete", "Export_absen::delete");
+
+//     $routes->match(["get", "post"], "detail", "Export_absen::detail");
+// });

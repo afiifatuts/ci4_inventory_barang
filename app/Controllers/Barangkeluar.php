@@ -343,13 +343,16 @@ class Barangkeluar extends BaseController
                 $tombolHapus = "<button type=\"button\" class=\"btn btn-sm btn-danger\" onclick=\"hapus('".$list->faktur."')\"> <i class=\" fa fa-trash-alt\"></i>
                 </button>";
 
+                $tombolEdit = "<button type=\"button\" class=\"btn btn-sm btn-primary\" onclick=\"edit('".$list->faktur."')\"> <i class=\" fa fa-edit\"></i>
+                </button>";
+
                 $row[] = $no;
                 $row[] = $list->faktur;
                 $row[] = $list->tglfaktur;
                 $row[] = $list->pelnama;
                 
                 $row[] = number_format($list->totalharga,0,",",".");;
-                $row[] =$tombolCetak ." ".$tombolHapus;
+                $row[] =$tombolCetak ." ".$tombolHapus ." ". $tombolEdit;
                 $data[] = $row;
             }
             $output = [
@@ -382,6 +385,88 @@ class Barangkeluar extends BaseController
             ];
             echo json_encode($json);
         }
+    }
+
+    public function edit($faktur)
+    {
+        $modelBarangKeluar = new ModelBarangKeluar();
+        $modelPelanggan = new ModelPelanggan();
+        $rowData = $modelBarangKeluar->find($faktur);
+        $rowPelanggan = $modelPelanggan->find($rowData['idpel']);
+
+        $data =[
+            'nofaktur'=>$faktur,
+            'tanggal'=>$rowData['tglfaktur'],
+            'namapelanggan'=> $rowPelanggan['pelnama']
+        ];
+
+        return view('barangkeluar/formedit', $data);
+    }
+
+    public function ambilTotalHarga()
+    {
+        if ($this->request->isAJAX()){
+            $nofaktur = $this->request->getPost('nofaktur');
+
+            $modelDetail = new ModelDetailBarangKeluar();
+
+            $totalHarga = $modelDetail->ambilTotalHarga($nofaktur);
+
+            $json=[
+                'totalharga'=> "Rp." . number_format($totalHarga,0,",",".")
+            ];
+
+            echo json_encode($json);
+        }
+    }
+
+    public function tampilDataDetail()
+    {
+        if($this->request->isAJAX()){
+            $nofaktur = $this->request->getPost('nofaktur');
+
+            $modalDetail = new ModelDetailBarangKeluar();
+
+            $dataTemp = $modalDetail->tampilDataTemp($nofaktur);
+            $data=[
+                'tampildata' =>$dataTemp
+            ];
+
+            $json=[
+                'data' => view('barangkeluar/datadetail' , $data)
+            ];
+
+            echo json_encode($json);
+
+
+        }
+    }
+
+    public function hapusItemDetail()
+    {
+        $id = $this->request->getPost('id');
+
+        $modelDetail = new ModelDetailBarangKeluar();
+        $modelBarangKeluar = new ModelBarangKeluar();
+
+        $rowData = $modelDetail->find($id);
+        $noFaktur = $rowData['detfaktur'];
+
+
+        $modelDetail->delete($id);
+
+        $totalHarga = $modelDetail->ambilTotalHarga($noFaktur);
+
+        //lakukan update total di tabel barang keluar 
+        $modelBarangKeluar->update($noFaktur,[
+            'totalharga'=>$totalHarga
+        ]);
+
+        $json=[
+            'sukses' => 'Item Berhasil Dihapus'
+        ];
+
+        echo json_encode($json);
     }
     
 

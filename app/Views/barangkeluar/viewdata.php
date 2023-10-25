@@ -133,5 +133,12 @@ Data Transaksi Barang Keluar
         })
     }
 </script>
+
+<!-- edit  -->
+<script>
+    function edit(faktur) {
+        window.location.href=('/barangkeluar/edit/')+faktur
+    }
+</script>
 <?= $this->endSection('isi') ?>
 

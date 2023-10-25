@@ -27,4 +27,16 @@ class ModelDetailBarangKeluar extends Model
    
     // }
 
+    function ambilTotalHarga($nofaktur){
+        $query = $this->table('detail_barangkeluar')->getWhere([
+            'detfaktur'=>$nofaktur
+        ]);
+
+        $totalHarga=0;
+        foreach($query->getResultArray()as $r):
+            $totalHarga+=$r['detsubtotal'];
+        endforeach;
+        return $totalHarga;
+    }
+
 }
