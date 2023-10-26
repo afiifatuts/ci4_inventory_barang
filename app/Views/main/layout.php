@@ -104,6 +104,12 @@
                                 <p class="text">Barang Keluar</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('/laporan/index') ?>" class="nav-link">
+                                <i class="nav-icon fa fa-file text-warning"></i>
+                                <p class="text">Laporan</p>
+                            </a>
+                        </li>
 
                     <?php endif;?>
 

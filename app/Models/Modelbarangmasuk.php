@@ -24,4 +24,10 @@ class Modelbarangmasuk extends Model
         ]);
     }
 
+    public function laporanPerPeriode($tglawal,$tglakhir)
+    {
+        return $this->table('barangmasuk')->where('tglfaktur >=',$tglawal)
+        ->where('tglfaktur <=',$tglakhir)->get();
+    }
+
 }

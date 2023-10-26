@@ -54,7 +54,7 @@ class Filters extends BaseConfig
         ],
         'after' => [
             'filterAdmin'=>[
-                 'except'=>['main/*','satuan/*','kategori/*','barang/*','barangmasuk/*','barangkeluar/*','pelanggan/*']
+                 'except'=>['main/*','satuan/*','kategori/*','barang/*','barangmasuk/*','barangkeluar/*','pelanggan/*','laporan/*']
             ],
             'filterKasir'=>[
                 'except'=>['barangkeluar/*','main/*','main']

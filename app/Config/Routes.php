@@ -102,6 +102,10 @@ $routes->post('/pelanggan/listData', 'Pelanggan::listData');
 $routes->post('/pelanggan/hapus', 'Pelanggan::hapus');
 
 
+//Laporan
+$routes->get('/laporan/index', 'Laporan::index');
+$routes->get('/laporan/cetak_barang_masuk', 'Laporan::cetak_barang_masuk');
+$routes->post('/laporan/cetak_barang_masuk_periode', 'Laporan::cetak_barang_masuk_periode');
 
 
 // $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
