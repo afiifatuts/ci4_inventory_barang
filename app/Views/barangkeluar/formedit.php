@@ -48,12 +48,15 @@ Edit Transaksi Barang Keluar
         <div class="form-group">
             <label for="">Kode Barang</label>
             <div class="input-group mb-3">
-            <input type="text" class="form-control" name="kodebarang" id="kodebarang">
+            <input type="text" class="form-control" name="kodebarang" id="kodebarang"/>
+            <br>
             <div class="input-group-append">
                 <button class="btn btn-outline-primary" id="tombolCariBarang" type="button">
                     <div class="fa fa-search"></div>
                 </button>
             </div>
+            <input type="hidden" id="iddetail"/>
+
             </div>
         </div>
      </div>
@@ -86,9 +89,13 @@ Edit Transaksi Barang Keluar
             <button type="button" class="btn btn-success" title="Simpan Item" id="tombolSimpanItem">
                 <i class="fa fa-save"></i>
             </button>&nbsp;
-            <button type="button" class="btn btn-info" title="Selesai Transaksi" id="tombolSelesaiTransaksi">
-                Selesai Transaksi
-            </button>
+           <button type="button" style="display:none;" class="btn btn-primary" title="Edit Item" id="tombolEditItem">
+            <i class="fa fa-edit"></i>
+           </button>
+
+           <button type="button" style="display:none;" class="btn btn-default" title="Batalkan" id="tombolBatal">
+            <i class="fa fa-sync-alt"></i>
+           </button>
             </div>
             
         </div>
@@ -123,10 +130,53 @@ Edit Transaksi Barang Keluar
 
     }
 </script>
+<!-- Edit detail barang keluar  -->
 <script>
     $(document).ready(function () {
         ambilTotalHarga();
         tampilDataDetail();
+
+        
+        //  ketika klik tombol simpan Item 
+        $('#tombolSimpanItem').click(function (e) { 
+            e.preventDefault();
+            simpanItem();
+            
+        });
+
+        $('#tombolEditItem').click(function (e) { 
+            e.preventDefault();
+            $.ajax({
+                type: "post",
+                url: "/barangkeluar/editItem",
+                data: {
+                    iddetail : $('#iddetail').val(),
+                    jml : $('#jml').val()
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.sukses){
+                        Swal.fire(
+                        'Berhasil!',
+                       response.sukses,
+                        'success'
+                        )
+
+                        tampilDataDetail();
+                        ambilTotalHarga();
+                        kosong(); 
+                        $('#kodebarang').prop('readonly',false);
+                        $('#tombolCariBarang').prop('disabled',false);
+                        $('#tombolSimpanItem').fadeIn();
+                        $('#tombolBatal').fadeOut();
+                        $('#tombolEditItem').fadeOut();
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+        });
     });
 </script>
 
@@ -172,5 +222,108 @@ function tampilDataDetail() {
         
     });
 </script>
+
+<!-- untuk ambil data barang  -->
+<script>
+    function ambilDataBarang(){
+        let kodebarang = $('#kodebarang').val();
+        if(kodebarang.length==0){
+            Swal.fire('error','Kode barang harus diinputkan','error')
+            kosong();
+        }else{
+        $.ajax({
+            type: "post",
+            url: "<?= base_url() ?>/barangkeluar/ambilDataBarang",
+            data: {
+                kodebarang:kodebarang 
+            },
+            dataType: "json",
+            success: function (response) {
+                if(response.error){
+                    Swal.fire('error',response.error,'error')
+                    kosong();
+                }
+
+                if(response.sukses){
+                    let data =response.sukses;
+
+                    $('#namabarang').val(data.namabarang);
+                    $('#hargajual').val(data.hargajual);
+                    $('#jml').focus();
+                }
+            },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+        });
+    }
+    }
+
+          // Tombol cari barang 
+          $('#tombolCariBarang').click(function (e) { 
+            e.preventDefault();
+            $.ajax({
+                url: "<?= base_url() ?>/barangkeluar/modalCariBarang",
+                dataType: "json",
+                success: function (response) {
+                   
+                    if(response.data){
+                        $('.viewmodal').html(response.data).show();
+                        $('#modalcaribarang').modal('show');
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+         })
+
+</script>
+
+<!-- Membuat function untuk simpan data ke table temporary  -->
+<script>
+    function simpanItem(){
+        let nofaktur = $('#nofaktur').val();
+        let kodebarang = $('#kodebarang').val();
+        let namabarang = $('#namabarang').val();
+        let hargajual = $('#hargajual').val();
+        let jml = $('#jml').val();
+
+        if(kodebarang.length ==0){
+            Swal.fire('error','Kode barang harus diinputkan','error')
+            kosong()
+        }else{
+            $.ajax({
+                type: "post",
+                url: "<?= base_url() ?>/barangkeluar/simpanItemDetail",
+                data: {
+                    nofaktur:nofaktur,
+                    kodebarang:kodebarang,
+                    namabarang:namabarang,
+                    hargajual:hargajual,
+                    jml:jml,
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.error){
+                        Swal.fire('Error',response.error,'error')
+                    }
+
+                    if(response.sukses){
+                        Swal.fire('Sukses',response.sukses,'success')
+                        tampilDataDetail()
+                        ambilTotalHarga()
+                        kosong()
+                    }
+                    
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+        }
+    }
+</script>
+
 
 <?= $this->endSection('isi') ?>

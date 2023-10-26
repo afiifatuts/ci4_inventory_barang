@@ -468,6 +468,94 @@ class Barangkeluar extends BaseController
 
         echo json_encode($json);
     }
+
+    public function editItem()
+    {
+        if($this->request->isAJAX()){
+            $iddetail = $this->request->getPost('iddetail');
+            $jml = $this->request->getPost('jml');
+
+            $modelDetail = new ModelDetailBarangKeluar();
+            $modelBarangKeluar = new ModelBarangKeluar();
+
+            $rowData = $modelDetail->find($iddetail);
+            $noFaktur = $rowData['detfaktur'];
+            $hargajual = $rowData['dethargajual'];
+
+            //lakukan update pada tabel detail
+
+            $modelDetail->update($iddetail,[
+                'detjml'=>$jml,
+                'detsubtotal'=>intval($hargajual)*$jml
+            ]);
+
+            //ambil totalHarga
+            $totalHarga = $modelDetail->ambilTotalHarga($noFaktur);
+            //updatte barang keluar
+            $modelBarangKeluar->update($noFaktur,[
+                'totalharga'=>$totalHarga
+            ]);
+
+            $json = [
+                'sukses'=> 'Item berhasil diupdate'
+            ];
+
+            echo json_encode($json);
+
+        }
+    }
+    
+    public function simpanItemDetail()
+    {
+        if($this->request->isAJAX()){
+            //ambil data dari request
+            $nofaktur = $this->request->getPost('nofaktur');
+            $kodebarang = $this->request->getPost('kodebarang');
+            $namabarang = $this->request->getPost('namabarang');
+            $jml = $this->request->getPost('jml');
+            $hargajual = $this->request->getPost('hargajual');
+
+            //membuat model barang model
+            $modalTempBarangKeluar = new ModelDetailBarangKeluar();
+            $modelDetail  = new ModelBarangKeluar();
+
+            // cek dulu apakah stoknya tersedia 
+            $modelBarang = new Modelbarang();
+            $ambilDataBarang = $modelBarang->find($kodebarang);
+            //ambil stoknya
+            $stokBarang = $ambilDataBarang['brgstok'];
+
+            if($jml>intval($stokBarang)){
+                $json =[
+                    'error'=>'Stok tidak mencukupi...'
+                ];
+            }else{
+                $modalTempBarangKeluar->insert([
+                    'detfaktur'=>$nofaktur,
+                    'detbrgkode'=>$kodebarang,
+                    'dethargajual'=>$hargajual,
+                    'detjml'=>$jml,
+                    'detsubtotal'=>$jml * $hargajual,
+                ]);
+
+                 //ambil totalHarga
+                    $totalHarga = $modalTempBarangKeluar->ambilTotalHarga($nofaktur);
+                    //updatte barang keluar
+                    $modelDetail->update($nofaktur,[
+                        'totalharga'=>$totalHarga
+                    ]);
+    
+                $json =[
+                    'sukses'=>'Item berhasil ditambahkan'
+                ];
+            }
+
+            
+
+            echo json_encode($json);
+
+        } 
+    }
     
 
 

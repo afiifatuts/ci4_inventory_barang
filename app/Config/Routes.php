@@ -90,6 +90,8 @@ $routes->get('/barangkeluar/edit/(:segment)', 'Barangkeluar::edit/$1');
 $routes->post('/barangkeluar/ambilTotalHarga', 'Barangkeluar::ambilTotalHarga');
 $routes->post('/barangkeluar/tampilDataDetail', 'Barangkeluar::tampilDataDetail');
 $routes->post('/barangkeluar/hapusItemDetail', 'Barangkeluar::hapusItemDetail');
+$routes->post('/barangkeluar/editItem', 'Barangkeluar::editItem');
+$routes->post('/barangkeluar/simpanItemDetail', 'Barangkeluar::simpanItemDetail');
 
 
 // Pelanggan 

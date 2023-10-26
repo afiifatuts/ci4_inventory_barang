@@ -33,7 +33,10 @@
     foreach ($tampildata->getResultArray() as $row):
     ?>
     <tr>
-        <td><?= $nomor++?></td>
+        <td>
+            <?= $nomor++?>
+        <input type="hidden" value="<?= $row['id']?>" id="id">
+        </td>
         <td><?= $row['detbrgkode']?></td>
         <td><?= $row['brgnama']?></td>
         <td style="text-align:right;"><?= number_format($row['dethargajual'],0,",",".")?></td>
@@ -84,3 +87,38 @@
         })
     }
 </script>
+<!-- ambil kodebarang disable edit button -->
+<script>
+    $('#datadetail tbody').on('click','tr', function(){
+        let row = $(this).closest('tr');
+
+        let kodebarang =row.find('td:eq(1)').text();
+
+        let id=row.find('td input').val()
+
+        $('#iddetail').val(id)
+        $('#kodebarang').val(kodebarang);
+
+        $('#tombolBatal').fadeIn();
+        $('#tombolEditItem').fadeIn();
+        $('#kodebarang').prop('readonly',true);
+        $('#tombolCariBarang').prop('disabled',true);
+        $('#tombolSimpanItem').fadeOut();
+        ambilDataBarang();
+    })
+</script>
+
+<script>
+    $(document).on('click','#tombolBatal',function (e) { 
+        e.preventDefault();
+        kosong();
+        tampilDataDetail();
+        $('#kodebarang').prop('readonly',false);
+        $('#tombolCariBarang').prop('disabled',false);
+        $('#tombolSimpanItem').fadeIn();
+        $('#tombolBatal').fadeOut();
+        $('#tombolEditItem').fadeOut();
+     })
+</script>
+
+
