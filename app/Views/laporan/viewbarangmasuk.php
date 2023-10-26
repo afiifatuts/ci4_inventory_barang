@@ -40,6 +40,33 @@ Cetak Laporan
 </div>
 
     </div>
+    <div class="col-lg-8">
+    <div class="card text-white bg-primary mb-3" >
+    <div class="card-header">Laporan Grafik</div>
+    <div class="card-body bg-white viewTampilGrafik">
+    </div>
+    </div>
+    </div>
 </div>
+
+<!-- tampilkan grafik  -->
+<script>
+    function tampilGrafik(){
+        $.ajax({
+            type: "post",
+            url: "/laporan/tampiGrafikBarangMasuk",
+            data: {
+                bulan: '11-2021'
+            },
+            dataType: "json",
+            success: function (response) {
+                
+            },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+        });
+    }
+</script>
 
 <?= $this->endSection('isi') ?>
