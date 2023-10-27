@@ -117,6 +117,13 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="<?= site_url('/payment/index') ?>" class="nav-link">
+                                <i class="nav-icon fa fa-file text-warning"></i>
+                                <p class="text">Payment</p>
+                            </a>
+                        </li>
+
                     <?php endif;?>
 
                     <?php if(session()->idlevel==3):?>

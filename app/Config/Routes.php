@@ -112,6 +112,10 @@ $routes->post('/laporan/tampiGrafikBarangMasuk', 'Laporan::tampiGrafikBarangMasu
 $routes->get('/utility/index', 'Utility::index');
 $routes->get('/utility/doBackup', 'Utility::doBackup');
 
+//Payment
+$routes->post('/payment/index', 'Payment::index');
+$routes->get('/payment/index', 'Payment::index');
+
 // $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
 //     $routes->match(["get", "post"], "/", "Export_absen::index");
 //     $routes->match(["get", "post"], "display", "Export_absen::display");
