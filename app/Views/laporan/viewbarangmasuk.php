@@ -30,9 +30,12 @@ Cetak Laporan
                 <input type="date" name="tglakhir" class="form-control" required>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-block btn-success">
+                <button type="submit" name="btnCetak" class="btn btn-block btn-success">
                     <i class="fa fa-print"></i> Cetak Laporan
-                </button>        
+                </button>    
+                <button type="submit" name="btnExport" class="btn btn-block btn-primary">
+                    <i class="fa fa-file-excel"></i> Export Excel
+                </button>      
         </div>
         <?= form_close()?>
         </p>

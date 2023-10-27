@@ -108,6 +108,9 @@ $routes->get('/laporan/cetak_barang_masuk', 'Laporan::cetak_barang_masuk');
 $routes->post('/laporan/cetak_barang_masuk_periode', 'Laporan::cetak_barang_masuk_periode');
 $routes->post('/laporan/tampiGrafikBarangMasuk', 'Laporan::tampiGrafikBarangMasuk');
 
+// Utility 
+$routes->get('/utility/index', 'Utility::index');
+$routes->get('/utility/doBackup', 'Utility::doBackup');
 
 // $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
 //     $routes->match(["get", "post"], "/", "Export_absen::index");

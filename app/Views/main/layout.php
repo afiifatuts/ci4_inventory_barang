@@ -110,6 +110,12 @@
                                 <p class="text">Laporan</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('/utility/index') ?>" class="nav-link">
+                                <i class="nav-icon fa fa-file text-warning"></i>
+                                <p class="text">Utility</p>
+                            </a>
+                        </li>
 
                     <?php endif;?>
 

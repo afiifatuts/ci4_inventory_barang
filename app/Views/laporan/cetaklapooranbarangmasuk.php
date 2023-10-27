@@ -60,7 +60,7 @@
                                         <tr>
                                             <th colspan="3">Total Seluruh Harga</th>
                                             <td style="text-align: right;">
-                                                <?= number_format($row['totalharga'],0,",",".")?>
+                                                <?= number_format($totalSeluruhHarga,0,",",".")?>
                                             </td>
                                         </tr>
                                     </tfoot>
