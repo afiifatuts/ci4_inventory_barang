@@ -34,4 +34,24 @@ class Laporan extends BaseController
         return view('laporan/cetaklapooranbarangmasuk',$data);
 
     }
+
+    public function tampiGrafikBarangMasuk()
+    {
+        $bulan = $this->request->getPost('bulan');
+
+        $db = \Config\Database::connect();
+        //SELECT tglfaktur AS tgk, totalharga FROM barangmasuk WHERE DATE_FORMAT(tglformat,'%Y-%m') = '2021-11' ORDER BY tglfaktur ASC;
+        $query = $db->query("SELECT tglfaktur AS tgl, totalharga FROM barangmasuk WHERE DATE_FORMAT(tglfaktur,'%Y-%m') = '$bulan' ORDER BY tglfaktur ASC")->getResult();
+        // $query = $db->query("SELECT tglfaktur AS tgl, totalharga FROM barangmasuk WHERE DATE_FORMAT(tglformat, '%Y-%m') = '$bulan' ORDER BY tgl ASC")->getResult();
+
+
+        $data = [
+            'grafik'=>$query
+        ];
+
+        $json = [
+            'data'=> view('laporan/grafikbarangmasuk',$data)
+        ];
+        echo json_encode($json);
+    }
 }

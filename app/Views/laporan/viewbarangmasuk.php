@@ -43,7 +43,15 @@ Cetak Laporan
     <div class="col-lg-8">
     <div class="card text-white bg-primary mb-3" >
     <div class="card-header">Laporan Grafik</div>
-    <div class="card-body bg-white viewTampilGrafik">
+    <div class="card-body bg-white ">
+        <div class="form-group">
+            <label for="">Pilih Bulan</label>
+            <input type="month"  id="bulan" class="form-control" value="<?= date('Y-m')?>">
+            <button type="button" class="btn btn-sm btn-primary" id="tombolTampil">
+                Tampil 
+            </button>
+        </div>
+        <div class="viewTampilGrafik"></div>
     </div>
     </div>
     </div>
@@ -56,17 +64,33 @@ Cetak Laporan
             type: "post",
             url: "/laporan/tampiGrafikBarangMasuk",
             data: {
-                bulan: '11-2021'
+                bulan: $('#bulan').val()
             },
             dataType: "json",
+            beforeSend:function(){
+                $('.viewTampilGrafik').html('<i class="fa fa-spin fa-spinner"></i>');
+            },
             success: function (response) {
-                
+                if(response.data){
+                    $('.viewTampilGrafik').html(response.data);
+                }
             },error:function(xhr,ajaxOptions, thrownError){
                 alert(xhr.status + '\n' + thrownError)
                 console.log(xhr.status + '\n' + thrownError)
             }
         });
     }
+</script>
+
+<script>
+    $(document).ready(function () {
+        tampilGrafik()
+
+        $('#tombolTampil').click(function (e) { 
+            e.preventDefault();
+            tampilGrafik()
+        });
+    });
 </script>
 
 <?= $this->endSection('isi') ?>
