@@ -1,0 +1,413 @@
+INFO - 2023-10-29 19:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 19:45:14 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 19:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 19:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 19:46:20 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 19:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 20:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 20:18:11 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 20:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-29 22:27:50 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, 'admin')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Login.php(50): CodeIgniter\BaseModel->find('admin')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Login->cekUser()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, 'admin')
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Login.php(50): CodeIgniter\BaseModel->find('admin')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Login->cekUser()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-29 22:27:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`userid` = :users.userid:', [...], false)
+ 3 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, 'admin')
+ 5 APPPATH/Controllers/Login.php(50): CodeIgniter\BaseModel->find('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Login->cekUser()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-29 22:28:34 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbgudang', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, 'admin')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Login.php(50): CodeIgniter\BaseModel->find('admin')
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Login->cekUser()
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/BaseModel.php(563): CodeIgniter\Model->doFind(true, 'admin')
+#5 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Login.php(50): CodeIgniter\BaseModel->find('admin')
+#6 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(919): App\Controllers\Login->cekUser()
+#7 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/belajar/ci4_inventory_barang/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-29 22:28:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`userid` = :users.userid:', [...], false)
+ 3 SYSTEMPATH/Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind(true, 'admin')
+ 5 APPPATH/Controllers/Login.php(50): CodeIgniter\BaseModel->find('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Login->cekUser()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:33:35 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:34:19 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:35:08 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:35:52 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:36:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:36:43 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 22:36:46 --> Undefined variable $modelTemp
+in APPPATH/Controllers/Barangkeluar.php on line 311.
+ 1 APPPATH/Controllers/Barangkeluar.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelTemp', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 311)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:42:27 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 22:42:28 --> Undefined variable $modelTemp
+in APPPATH/Controllers/Barangkeluar.php on line 311.
+ 1 APPPATH/Controllers/Barangkeluar.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelTemp', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 311)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:42:56 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 22:42:58 --> Undefined variable $noFaktur
+in APPPATH/Controllers/Barangkeluar.php on line 311.
+ 1 APPPATH/Controllers/Barangkeluar.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noFaktur', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 311)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:43:19 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 22:43:22 --> Undefined variable $cekData
+in APPPATH/Controllers/Barangkeluar.php on line 313.
+ 1 APPPATH/Controllers/Barangkeluar.php(313): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cekData', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 313)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 22:43:22 --> Undefined variable $cekData
+in APPPATH/Controllers/Barangkeluar.php on line 313.
+ 1 APPPATH/Controllers/Barangkeluar.php(313): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cekData', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 313)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:44:27 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 22:44:29 --> Undefined variable $cekData
+in APPPATH/Controllers/Barangkeluar.php on line 313.
+ 1 APPPATH/Controllers/Barangkeluar.php(313): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cekData', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 313)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 22:46:30 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 22:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 22:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:04:12 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:05:15 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:15:07 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:18:07 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:26:00 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 23:26:03 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Barangkeluar.php on line 316.
+ 1 APPPATH/Controllers/Barangkeluar.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 316)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 23:26:33 --> Undefined variable $cekData
+in APPPATH/Controllers/Barangkeluar.php on line 331.
+ 1 APPPATH/Controllers/Barangkeluar.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cekData', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 331)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:26:36 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 23:26:51 --> Undefined variable $cekData
+in APPPATH/Controllers/Barangkeluar.php on line 331.
+ 1 APPPATH/Controllers/Barangkeluar.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cekData', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 331)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:27:20 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-29 23:28:13 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Controllers/Barangkeluar.php on line 25.
+ 1 APPPATH/Controllers/Barangkeluar.php(25): substr(null, -4)
+ 2 APPPATH/Controllers/Barangkeluar.php(57): App\Controllers\Barangkeluar->buatfaktur()
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->input()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-29 23:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-29 23:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-29 23:28:16 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Barangkeluar.php on line 316.
+ 1 APPPATH/Controllers/Barangkeluar.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Applications/MAMP/htdocs/belajar/ci4_inventory_barang/app/Controllers/Barangkeluar.php', 316)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Barangkeluar->payMidtrans()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barangkeluar))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

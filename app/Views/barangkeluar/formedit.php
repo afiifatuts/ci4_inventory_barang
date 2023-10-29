@@ -5,7 +5,7 @@ Edit Transaksi Barang Keluar
 <?= $this->endSection('judul') ?>
 
 <?= $this->section('subjudul') ?>
-<button type="button" class="btn btn-warning" onclick="location.href=('/barangkeluar/data')">
+<button type="button" class="btn btn-warning" onclick="location.href=('<?= base_url() ?>/barangkeluar/data')">
     <i class="fa fa-backward"></i> Kembali
 </button>
 <?= $this->endSection('subjudul') ?>
@@ -115,7 +115,7 @@ Edit Transaksi Barang Keluar
         let nofaktur = $('#nofaktur').val();
         $.ajax({
             type: "post",
-            url: "/barangkeluar/ambilTotalHarga",
+            url: "<?= base_url() ?>/barangkeluar/ambilTotalHarga",
             data: {
                 nofaktur:nofaktur
             },
@@ -148,7 +148,7 @@ Edit Transaksi Barang Keluar
             e.preventDefault();
             $.ajax({
                 type: "post",
-                url: "/barangkeluar/editItem",
+                url: "<?= base_url() ?>/barangkeluar/editItem",
                 data: {
                     iddetail : $('#iddetail').val(),
                     jml : $('#jml').val()
@@ -196,7 +196,7 @@ function tampilDataDetail() {
     let nofaktur = $('#nofaktur').val();
     $.ajax({
         type: "post",
-        url: "/barangkeluar/tampilDataDetail",
+        url: "<?= base_url() ?>/barangkeluar/tampilDataDetail",
         data: {
             nofaktur:nofaktur 
         },

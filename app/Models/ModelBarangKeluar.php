@@ -10,6 +10,7 @@ class ModelBarangKeluar extends Model
     protected $primaryKey       = 'faktur';
     protected $allowedFields    = [
         'faktur', 'tglfaktur','idpel','totalharga','jumlahuang','sisauang'
+        ,'order_id','payment_type','payment_method', 'transaction_time', 'transaction_status', 'va_number','bank'
     ];
 
     public function noFaktur($tanggalSekarang)  {

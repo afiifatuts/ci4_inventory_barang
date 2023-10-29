@@ -265,6 +265,8 @@ class Barangkeluar extends BaseController
                 'totalharga' => $totalbayar,
                 'jumlahuang' => $jumlahuang,
                 'sisauang' => $sisauang,
+                //payment method Cash
+                'payment_method'=>'C'
             ]);
 
             $modelTemp = new ModelTempBarangKeluar();
@@ -295,6 +297,92 @@ class Barangkeluar extends BaseController
 
             echo json_encode($json);
         }
+    }
+
+    public function payMidtrans() {
+        $nofaktur = $this->request->getPost('nofaktur');
+        $tglfaktur = $this->request->getPost('tglfaktur');
+        $idpelanggan = $this->request->getPost('idpelanggan');
+        $totalharga = $this->request->getPost('totalharga');
+    
+        $modelTemp = new ModelTempBarangKeluar();
+        $cekdata = $modelTemp->tampilDataTemp($nofaktur);
+    
+        
+    
+        if ($cekdata->getNumRows() > 0) {
+            // Proses data jika item ada
+            //mengambil model pelanggan
+            $modelPelanggan = new ModelPelanggan();
+            $rowPel = $modelPelanggan->find($idpelanggan);
+            $namaPelanggan = $rowPel['pelnama'];
+            $telpPelanggan = $rowPel['peltelp'];
+
+                    // Set your Merchant Server Key
+        \Midtrans\Config::$serverKey = 'SB-Mid-server-0bkRT2pUyONGZarllm_rK1aO';
+        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+        \Midtrans\Config::$isProduction = false;
+        // Set sanitization on (default)
+        \Midtrans\Config::$isSanitized = true;
+        // Set 3DS transaction for credit card to true
+        \Midtrans\Config::$is3ds = true;
+
+
+        
+        $dataTempBarangKeluar = [];
+        foreach ($cekdata->getResultArray() as $x):
+            $dataTempBarangKeluar[]=[
+        'id'       => $x['detbrgkode'],
+        'price'    => $x['dethargajual'],
+        'quantity' => $x['detjml'],
+        'name'     => $x['brgnama']
+            ];
+        endforeach;
+        
+        // Populate items
+// $items = array(
+//     array(
+//         'id'       => 'item1',
+//         'price'    => 100000,
+//         'quantity' => 1,
+//         'name'     => 'Adidas f50'
+//     ),
+//     array(
+//         'id'       => 'item2',
+//         'price'    => 50000,
+//         'quantity' => 2,
+//         'name'     => 'Nike N90'
+//     )
+// );
+
+// Populate customer's info
+$customer_details = array(
+    'first_name'       => $namaPelanggan,
+    'phone'            => $telpPelanggan
+);
+       
+
+        $params = [
+            'transaction_details' => array(
+                'order_id' => rand(),
+                'gross_amount' => 10000,
+            ),
+            'item_details'        => $dataTempBarangKeluar,
+            'customer_details'    => $customer_details
+        ];
+        
+        $json = [
+            'snapToken' => \Midtrans\Snap::getSnapToken($params)
+        ];
+           
+        } else {
+            $json = [
+                'error' => 'Maaf item belum ada'
+                // tambahkan data lainnya yang diperlukan di sini
+            ];
+        }
+    
+        echo json_encode($json);
     }
 
     public function cetakFaktur($faktur){

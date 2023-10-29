@@ -115,6 +115,7 @@ $routes->get('/utility/doBackup', 'Utility::doBackup');
 //Payment
 $routes->post('/payment/index', 'Payment::index');
 $routes->get('/payment/index', 'Payment::index');
+$routes->post('/barangkeluar/payMidtrans', 'Barangkeluar::payMidtrans');
 
 // $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
 //     $routes->match(["get", "post"], "/", "Export_absen::index");

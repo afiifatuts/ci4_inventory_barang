@@ -62,7 +62,7 @@ class Filters extends BaseConfig
            'filterGudang'=>[
                'except'=>['barangmasuk/*','main/*','main']
           ],
-            'toolbar',
+            // 'toolbar',
             // 'honeypot',
             // 'secureheaders',
             

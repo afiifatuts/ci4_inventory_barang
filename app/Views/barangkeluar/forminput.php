@@ -68,7 +68,7 @@ Input Transaksi Barang Keluar
         </div>
      </div>
 
-     <div class="col-lg-3">
+     <div class="col-lg-2">
         <div class="form-group">
             <label for="">Harga Jual (Rp)</label>
             <input type="text" name="hargajual" id="hargajual" class="form-control" readonly>
@@ -82,7 +82,7 @@ Input Transaksi Barang Keluar
         </div>
      </div>
 
-     <div class="col-lg-2">
+     <div class="col-lg-3">
         <div class="form-group">
             <label for="">#</label>
             <div class="input-group mb-3">
@@ -91,6 +91,9 @@ Input Transaksi Barang Keluar
             </button>&nbsp;
             <button type="button" class="btn btn-info" title="Selesai Transaksi" id="tombolSelesaiTransaksi">
                 Selesai Transaksi
+            </button>&nbsp;
+            <button type="button" class="btn btn-primary" title="Payment Midtrans" id="tombolPay">
+                Pay
             </button>
             </div>
             
@@ -105,6 +108,10 @@ Input Transaksi Barang Keluar
 </div>
 
 <div class="viewmodal" style="display: none;"></div>
+<!-- Payment with midtrans  -->
+<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-Nf5chmQvzWE0iJk9"></script>
+
+
 <!-- Membuat function untuk simpan data ke table temporary  -->
 <script>
     function simpanItem(){
@@ -347,6 +354,52 @@ function tampilDataTemp() {
                         $('.viewmodal').html(response.data).show()
                         $('#modalpembayaran').modal('show');
                         // Swal.fire('error',response.error,'error')
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+        });
+
+        // Payment midtrans 
+        $("#tombolPay").click(function (e) { 
+            e.preventDefault();
+            $.ajax({
+                type: "post",
+                url:"<?= base_url() ?>/barangkeluar/payMidtrans" ,
+                data: {
+                    nofaktur :$('#nofaktur').val(),
+                    tglfaktur :$('#tglfaktur').val(),
+                    idpelanggan :$('#idpelanggan').val(),
+                    totalharga :$('#totalHarga').val(),
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.error){
+                        Swal.fire('error',response.error,'error')
+                    }else{
+                        //code midtrans
+                           // SnapToken acquired from previous step
+        snap.pay(response.snapToken, {
+          // Optional
+          onSuccess: function(result){
+            /* You may add your own js here, this is just example */ 
+            console.log(JSON.stringify(result, null, 2));
+          },
+          // Optional
+          onPending: function(result){
+            /* You may add your own js here, this is just example */ 
+            console.log(JSON.stringify(result, null, 2));
+
+          },
+          // Optional
+          onError: function(result){
+            /* You may add your own js here, this is just example */ 
+            console.log(JSON.stringify(result, null, 2));
+
+          }
+        });
                     }
                 },error:function(xhr,ajaxOptions, thrownError){
                 alert(xhr.status + '\n' + thrownError)

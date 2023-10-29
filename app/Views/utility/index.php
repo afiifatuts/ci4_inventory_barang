@@ -11,7 +11,7 @@ Backup Database
 <?= $this->section('isi') ?>
 <?= session()->getFlashdata('pesan')?>
 <br>
-<button type="button" class="btn btn-primary" onclick="location.href=('/utility/doBackup')">
+<button type="button" class="btn btn-primary" onclick="location.href=('<?= base_url() ?>/utility/doBackup')">
     Click To Backup Database 
 </button>
 <?= $this->endSection('isi') ?>

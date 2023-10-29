@@ -6,7 +6,7 @@ Cetak Laporan
 
 <?= $this->section('subjudul') ?>
 
-<button type="button" class="btn btn-warning" onclick="window.location=('/laporan/index')">
+<button type="button" class="btn btn-warning" onclick="window.location=('<?= base_url() ?>laporan/index')">
     Kembali
 </button>
 
@@ -65,7 +65,7 @@ Cetak Laporan
     function tampilGrafik(){
         $.ajax({
             type: "post",
-            url: "/laporan/tampiGrafikBarangMasuk",
+            url: "<?= base_url() ?>laporan/tampiGrafikBarangMasuk",
             data: {
                 bulan: $('#bulan').val()
             },

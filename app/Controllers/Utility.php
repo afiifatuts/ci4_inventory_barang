@@ -30,6 +30,7 @@ class Utility extends BaseController
      }
  
      // Execute the MySQL dump and save the backup to the specified file.
+    //  $dumb = new Mysqldump('mysql:host=localhost;dbname=dbgudang;port=3306', 'root', '');
      $dumb = new Mysqldump('mysql:host=localhost;dbname=dbgudang;port=3306', 'root', '');
      $dumb->start($backupFilePath);
  
