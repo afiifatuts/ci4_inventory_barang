@@ -110,17 +110,19 @@
                                 <p class="text">Laporan</p>
                             </a>
                         </li>
+
+                        <li class="nav-header">Utility</li>
                         <li class="nav-item">
                             <a href="<?= site_url('/utility/index') ?>" class="nav-link">
                                 <i class="nav-icon fa fa-file text-warning"></i>
-                                <p class="text">Utility</p>
+                                <p class="text">Backup DB</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= site_url('/payment/index') ?>" class="nav-link">
-                                <i class="nav-icon fa fa-file text-warning"></i>
-                                <p class="text">Payment</p>
+                            <a href="<?= site_url('/users/index') ?>" class="nav-link">
+                                <i class="nav-icon fa fa-file text-danger"></i>
+                                <p class="text">Users</p>
                             </a>
                         </li>
 

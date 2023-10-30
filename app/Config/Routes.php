@@ -119,6 +119,9 @@ $routes->get('/payment/index', 'Payment::index');
 $routes->post('/barangkeluar/payMidtrans', 'Barangkeluar::payMidtrans');
 $routes->post('/barangkeluar/finishMidtrans', 'Barangkeluar::finishMidtrans');
 
+//Users
+$routes->get('/users/index', 'Users::index');
+$routes->get('/users/listData', 'Users::listData');
 // $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
 //     $routes->match(["get", "post"], "/", "Export_absen::index");
 //     $routes->match(["get", "post"], "display", "Export_absen::display");
