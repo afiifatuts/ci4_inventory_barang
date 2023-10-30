@@ -92,6 +92,7 @@ $routes->post('/barangkeluar/tampilDataDetail', 'Barangkeluar::tampilDataDetail'
 $routes->post('/barangkeluar/hapusItemDetail', 'Barangkeluar::hapusItemDetail');
 $routes->post('/barangkeluar/editItem', 'Barangkeluar::editItem');
 $routes->post('/barangkeluar/simpanItemDetail', 'Barangkeluar::simpanItemDetail');
+$routes->get('/barangkeluar/cektransaksi/(:segment)', 'Barangkeluar::cektransaksi/$1');
 
 
 // Pelanggan 
@@ -116,6 +117,7 @@ $routes->get('/utility/doBackup', 'Utility::doBackup');
 $routes->post('/payment/index', 'Payment::index');
 $routes->get('/payment/index', 'Payment::index');
 $routes->post('/barangkeluar/payMidtrans', 'Barangkeluar::payMidtrans');
+$routes->post('/barangkeluar/finishMidtrans', 'Barangkeluar::finishMidtrans');
 
 // $routes->group("export_absen", ["namespace" => "App\Controllers\Admin", "filter" => "authWebsite"], function ($routes) {
 //     $routes->match(["get", "post"], "/", "Export_absen::index");

@@ -384,13 +384,75 @@ function tampilDataTemp() {
         snap.pay(response.snapToken, {
           // Optional
           onSuccess: function(result){
-            /* You may add your own js here, this is just example */ 
-            console.log(JSON.stringify(result, null, 2));
+            //ambil resultnya(hasilnya json stringify)
+            let dataResult = JSON.stringify(result, null, 2);
+            //jadikan json ke object(hasilnya sudah object)
+            let dataObj = JSON.parse(dataResult);
+            $.ajax({
+                type: "post",
+                url: "<?= base_url() ?>/barangkeluar/finishMidtrans",
+                data: {
+                    nofaktur :response.nofaktur,
+                    tglfaktur :response.tglfaktur,
+                    idpelanggan :response.idpelanggan,
+                    totalharga :response.totalharga,
+                    //ambil dari response json yang sudah dijadikan object
+                    order_id:dataObj.order_id,
+                    payment_type :dataObj.payment_type,
+                    // transaction_time:dataObj.transaction_time,
+                    transaction_status:dataObj.transaction_status,
+                    //ini responsenya berupa array
+                    // va_number:dataObj.va_numbers[0].va_number,
+                    // bank:dataObj.va_numbers[0].bank,
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.sukses){
+                        Swal.fire('Sukses',response.sukses,'success')
+                        window.location.reload()
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
+       
           },
           // Optional
           onPending: function(result){
             /* You may add your own js here, this is just example */ 
-            console.log(JSON.stringify(result, null, 2));
+             //ambil resultnya(hasilnya json stringify)
+             let dataResult = JSON.stringify(result, null, 2);
+            //jadikan json ke object(hasilnya sudah object)
+            let dataObj = JSON.parse(dataResult);
+            $.ajax({
+                type: "post",
+                url: "<?= base_url() ?>/barangkeluar/finishMidtrans",
+                data: {
+                    nofaktur :response.nofaktur,
+                    tglfaktur :response.tglfaktur,
+                    idpelanggan :response.idpelanggan,
+                    totalharga :response.totalharga,
+                    //ambil dari response json yang sudah dijadikan object
+                    order_id:dataObj.order_id,
+                    payment_type :dataObj.payment_type,
+                    // transaction_time:dataObj.transaction_time,
+                    transaction_status:dataObj.transaction_status,
+                    //ini responsenya berupa array
+                    // va_number:dataObj.va_numbers[0].va_number,
+                    // bank:dataObj.va_numbers[0].bank,
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response.sukses){
+                        Swal.fire('Sukses',response.sukses,'success')
+                        window.location.reload()
+                    }
+                },error:function(xhr,ajaxOptions, thrownError){
+                alert(xhr.status + '\n' + thrownError)
+                console.log(xhr.status + '\n' + thrownError)
+            }
+            });
 
           },
           // Optional

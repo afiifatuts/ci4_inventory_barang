@@ -8,7 +8,7 @@ use CodeIgniter\Model;
 class ModelDataBarangKeluar extends Model
 {
     protected $table = "barangkeluar";
-    protected $column_order = array(null,'faktur','tglfaktur','pelnama','totalharga',null);
+    protected $column_order = array(null,'faktur','tglfaktur','pelnama','payment_method','transaction_status','totalharga',null);
     protected $column_search = array('faktur','tglfaktur','pelnama');
     protected $order = array('faktur' => 'ASC');
     protected $request;

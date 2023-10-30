@@ -339,26 +339,12 @@ class Barangkeluar extends BaseController
             ];
         endforeach;
         
-        // Populate items
-// $items = array(
-//     array(
-//         'id'       => 'item1',
-//         'price'    => 100000,
-//         'quantity' => 1,
-//         'name'     => 'Adidas f50'
-//     ),
-//     array(
-//         'id'       => 'item2',
-//         'price'    => 50000,
-//         'quantity' => 2,
-//         'name'     => 'Nike N90'
-//     )
-// );
-
+ 
 // Populate customer's info
 $customer_details = array(
     'first_name'       => $namaPelanggan,
-    'phone'            => $telpPelanggan
+    'phone'            => $telpPelanggan,
+    'email'=> 'afiifatuts04@gmail.com'
 );
        
 
@@ -372,6 +358,10 @@ $customer_details = array(
         ];
         
         $json = [
+            'nofaktur'=>$nofaktur,
+            'tglfaktur'=>$tglfaktur,
+            'idpelanggan'=>$idpelanggan,
+            'totalharga'=>$totalharga,
             'snapToken' => \Midtrans\Snap::getSnapToken($params)
         ];
            
@@ -383,6 +373,113 @@ $customer_details = array(
         }
     
         echo json_encode($json);
+    }
+
+    //untuk menyimpan transaksi midtrans ke dalam database 
+    public function finishMidtrans(){
+        if($this->request->isAJAX()){
+            $nofaktur = $this->request->getPost('nofaktur');
+            $tglfaktur = $this->request->getPost('tglfaktur');
+            $idpelanggan = $this->request->getPost('idpelanggan');
+            $totalharga = $this->request->getPost('totalharga');
+            $order_id = $this->request->getPost('order_id');
+            $payment_type = $this->request->getPost('payment_type');
+            // $transaction_time = $this->request->getPost('transaction_time');
+            $transaction_status = $this->request->getPost('transaction_status');
+            // $va_number = $this->request->getPost('va_number');
+            // $bank = $this->request->getPost('bank');
+
+            $modelBarangKeluar = new ModelBarangKeluar();
+            //simpan ke table barang keluar
+            $modelBarangKeluar->insert([
+                'faktur'=>$nofaktur,
+                'tglfaktur'=>$tglfaktur,
+                'idpel'=>$idpelanggan,
+                'totalharga'=>$totalharga,
+                'payment_method'=>'M',
+                'order_id'=>$order_id,
+                'payment_type'=>$payment_type,
+                // 'transaction_time'=>$transaction_time,
+                'transaction_status'=>$transaction_status,
+                // 'va_number'=>$va_number,
+                // 'bank'=>$bank,
+            ]);
+
+
+            $modelTemp = new ModelTempBarangKeluar();
+            $dataTemp = $modelTemp->getWhere(['detfaktur'=>$nofaktur]);
+
+            $fieldDetail =[];
+
+            foreach($dataTemp->getResultArray() as $row){
+                $fieldDetail[]=[
+                    'detfaktur'=>$row['detfaktur'],
+                    'detbrgkode'=>$row['detbrgkode'],
+                    'dethargajual'=>$row['dethargajual'],
+                    'detjml'=>$row['detjml'],
+                    'detsubtotal'=>$row['detsubtotal'],
+                ];
+            }
+
+            $modelDetail = new ModelDetailBarangKeluar();
+            $modelDetail->insertBatch($fieldDetail);
+
+            //Hapus Temp Detail barang keluar
+            $modelTemp->hapusData($nofaktur);
+
+            $json = [
+                'sukses'=>'Transaksi Midtrans berhasil disimpan, silahkan lakukan pembayaran'
+            ];
+
+            echo json_encode($json);
+
+        }
+    }
+
+    public function cektransaksi($faktur)
+    {
+        $modelBarangKeluar = new ModelBarangKeluar();
+        $cekData = $modelBarangKeluar->find($faktur);
+
+        if($cekData){      
+         // Set your Merchant Server Key
+        \Midtrans\Config::$serverKey = 'SB-Mid-server-0bkRT2pUyONGZarllm_rK1aO';
+        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+        \Midtrans\Config::$isProduction = false;
+        // Set sanitization on (default)
+        \Midtrans\Config::$isSanitized = true;
+        // Set 3DS transaction for credit card to true
+        \Midtrans\Config::$is3ds = true;
+
+            $idpel = $cekData['idpel'];
+            $modelPelanggan = new ModelPelanggan();
+            $dataPel = $modelPelanggan->find($idpel);
+
+            $namaPelanggan = $dataPel['pelnama'];
+            $telp = $dataPel['peltelp'];
+
+
+        //update status transaksi 
+        $status = \Midtrans\Transaction::status($cekData['order_id']);
+
+        $modelBarangKeluar->update($faktur,[
+            'transaction_status'=> $status->transaction_status
+        ]);
+
+            $data = [
+                'nofaktur'=>$faktur,
+                'tglfaktur'=>$cekData['tglfaktur'],
+                'namapelanggan'=>$namaPelanggan,
+                'telp'=>$telp,
+                'order_id'=>$cekData['order_id'],
+                'status_transaksi'=>$status->transaction_status,
+            ];
+
+            return view('barangkeluar/cektransaksimidtrans', $data);
+        }else{
+            exit('Data tidak ditemukan');
+        }
+
     }
 
     public function cetakFaktur($faktur){
@@ -428,16 +525,48 @@ $customer_details = array(
                 $tombolCetak = "<button type=\"button\" class=\"btn btn-sm btn-info\" onclick=\"cetak('".$list->faktur."')\"> <i class=\" fa fa-print\"></i>
                 </button>";
 
-                $tombolHapus = "<button type=\"button\" class=\"btn btn-sm btn-danger\" onclick=\"hapus('".$list->faktur."')\"> <i class=\" fa fa-trash-alt\"></i>
-                </button>";
 
-                $tombolEdit = "<button type=\"button\" class=\"btn btn-sm btn-primary\" onclick=\"edit('".$list->faktur."')\"> <i class=\" fa fa-edit\"></i>
+                if($list->transaction_status =='settlement'){
+                    $tombolHapus ='';
+                }else{
+                    $tombolHapus = "<button type=\"button\" class=\"btn btn-sm btn-danger\" onclick=\"hapus('".$list->faktur."')\"> <i class=\" fa fa-trash-alt\"></i>
+                    </button>";
+                }
+
+
+                if($list->payment_method =='M'){
+                    $tombolEdit = "<button type=\"button\" class=\"btn btn-sm bg-purple\" onclick=\"cekTransaksi('".$list->faktur."')\"> <i class=\" fa fa-eye\"></i>
+                    </button>";
+                }else{
+                    $tombolEdit = "<button type=\"button\" class=\"btn btn-sm btn-primary\" onclick=\"edit('".$list->faktur."')\"> <i class=\" fa fa-edit\"></i>
                 </button>";
+                }
+
+               
+
+                
 
                 $row[] = $no;
                 $row[] = $list->faktur;
                 $row[] = $list->tglfaktur;
                 $row[] = $list->pelnama;
+
+                $row[] = ($list->payment_method=='M')? "<span class=\"badge badge-info\">Midtrans</span>":"<span class=\"badge bg-purple\">Cash</span>";
+
+                //Menampilkan status transaksi
+                if($list->payment_method=='M'){
+                    if($list->transaction_status== 'pending'){
+                        $row[] = "<span class=\"badge bg-gray\">Pending</span>";
+                    }else if($list->transaction_status== 'settlement'){
+                        $row[] = "<span class=\"badge bg-success\">Success</span>";
+                    }else{
+                        $row[] = "<span class=\"badge bg-danger\">Expire</span>";
+                    }
+                }else{
+                    $row[] = "<span class=\"badge bg-warning\">
+                    <i class=\"fa fa-check\"></i>
+                    </span>";
+                }
                 
                 $row[] = number_format($list->totalharga,0,",",".");;
                 $row[] =$tombolCetak ." ".$tombolHapus ." ". $tombolEdit;
@@ -456,12 +585,25 @@ $customer_details = array(
     public function hapusTransaksi()
     {
         if($this->request->isAJAX()){
+             // Set your Merchant Server Key
+        \Midtrans\Config::$serverKey = 'SB-Mid-server-0bkRT2pUyONGZarllm_rK1aO';
+        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+        \Midtrans\Config::$isProduction = false;
+        // Set sanitization on (default)
+        \Midtrans\Config::$isSanitized = true;
+        // Set 3DS transaction for credit card to true
+        \Midtrans\Config::$is3ds = true;
+
             $faktur = $this->request->getPost('faktur');
 
-            $modelDetail = new ModelDetailBarangKeluar();
+            // $modelDetail = new ModelDetailBarangKeluar();
             $modelBarangKeluar = new ModelBarangKeluar();
 
+            $dataBarangKeluar = $modelBarangKeluar->find($faktur);
+
             $db = \Config\Database::connect();
+
+             \Midtrans\Transaction::cancel($dataBarangKeluar['order_id']);
 
             $db->table('detail_barangkeluar')->delete(['detfaktur'=>$faktur]);
             $modelBarangKeluar->delete($faktur);

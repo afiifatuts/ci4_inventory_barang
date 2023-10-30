@@ -44,6 +44,8 @@ Data Transaksi Barang Keluar
                     <th>Faktur</th>
                     <th>Tanggal</th>
                     <th>Pelanggan</th>
+                    <th>Payment <br> Method</th>
+                    <th>Status</th>
                     <th>Total Harga</th>
                     <th>Aksi</th>
                 </tr>
@@ -53,6 +55,12 @@ Data Transaksi Barang Keluar
             </tbody>
       </table>
 
+      <!-- Cek data transaksi apabila dengan midtrans  -->
+      <script>
+        function cekTransaksi(faktur){
+            window.location.href='/barangkeluar/cektransaksi/'+faktur;
+        }
+      </script>
 
       <!-- untuk menampilkan list data barang keluar  -->
 <script>
