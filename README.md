@@ -1,4 +1,4 @@
-![image](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/f2c34eeb-7e7d-4614-a45c-2a8611d70999)# CodeIgniter 4 Framework
+# CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
 
