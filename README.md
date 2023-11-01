@@ -100,3 +100,25 @@ Hapus Barang
 ![Screenshot 2023-11-01 093246](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/f86929e2-5261-42cb-bb1a-48b5273c9ee8)
 
 ## Barang Masuk Page
+
+![Screenshot 2023-11-01 093258](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/71aaafae-0958-4d10-a637-2f7a467e3ce0)
+
+Input Barang Masuk 
+![Screenshot 2023-11-01 094141](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/c2074c1e-fdcf-497b-bdf4-5b8467139641)
+
+Pilih Barang
+![Screenshot 2023-11-01 094152](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/817319af-3185-450b-a21a-abf0da6da525)
+
+Simpan Transaksi 
+![Screenshot 2023-11-01 094218](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/0424486a-8087-4e8f-b493-72b8eacdc9ec)
+![Screenshot 2023-11-01 094228](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/c34d4601-333d-4f47-8338-0576f2adbe9a)
+
+Edit Barang Masuk 
+![Screenshot 2023-11-01 094302](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/d1de768c-b96b-4dc5-a997-a868fbdfbf25)
+
+Hapus Item Barang Masuk
+![Screenshot 2023-11-01 094316](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/45562580-4884-4084-8371-5f6be98cd0a8)
+
+Hapus Barang Masuk 
+![Screenshot 2023-11-01 094334](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/f20ff154-5a41-45d3-b5ca-ed83cec12eca)
+
