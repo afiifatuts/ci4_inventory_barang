@@ -1,4 +1,4 @@
-# CodeIgniter 4 Framework
+![image](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/f2c34eeb-7e7d-4614-a45c-2a8611d70999)# CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
 
@@ -122,3 +122,43 @@ Hapus Item Barang Masuk
 Hapus Barang Masuk 
 ![Screenshot 2023-11-01 094334](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/f20ff154-5a41-45d3-b5ca-ed83cec12eca)
 
+## Barang Keluar Page
+
+![Screenshot 2023-11-01 094654](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/e7ee95bc-d955-4c30-ba3b-70c035f88358)
+
+Input Barang Keluar
+![Screenshot 2023-11-01 094718](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/5f02c8ba-adec-48b2-bba8-172c882e0f96)
+
+Input Pelanggan
+![Screenshot 2023-11-01 094752](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/b083f3ec-8e39-4c93-bddb-33600db9414a)
+
+![Screenshot 2023-11-01 094802](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/729491a9-9276-442f-b72f-5d396e588d6d)
+
+Cari Barang
+![Screenshot 2023-11-01 094812](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/0c43fbef-aa54-4033-9b8c-ce04387a180c)
+
+Simpan Barang
+![Screenshot 2023-11-01 094845](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/a5853e86-9e52-4243-891d-e102851b72c3)
+
+Pembayaran Cash 
+![Screenshot 2023-11-01 094856](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/7512aac9-7150-4d19-972e-0966f46da6ec)
+
+Pembayaran Midtrans 
+![Screenshot 2023-11-01 094906](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/359c7656-b276-4161-b8ac-aac3607c554b)
+![Screenshot 2023-11-01 094917](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/33ba30e3-161f-44d8-b2aa-6d8eae3885e4)
+
+Status Pembayaran Midtrans
+![Screenshot 2023-11-01 095020](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/0549f3e2-297d-4f7a-8c45-d59d8f01531c)
+
+## Cetak Laporan Page
+![Screenshot 2023-11-01 095046](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/c0ab9f97-21a6-41c7-92a0-ee5958dbc2dd)
+
+Cetak Laporan
+![Screenshot 2023-11-01 095105](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/1a2075f3-6366-43ac-a69c-db0eebda4d8c)
+![Screenshot 2023-11-01 095115](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/5bf66cca-c7e7-4c0b-89b5-96c32023799a)
+
+File Excel
+![Screenshot 2023-11-01 095750](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/38d22780-76f6-4ade-944f-e93b3b19a795)
+
+## Backup Db Page
+![Screenshot 2023-11-01 095145](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/76c93c57-f813-4dbf-b54c-dd03ecd9601c)
