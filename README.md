@@ -52,3 +52,51 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+
+# Screenshoot Aplikasi 
+## Login
+![Screenshot 2023-11-01 092819](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/cb31fdd0-b6f5-406b-b5ab-52f307bc8e28)
+
+## Admin Page
+
+![Screenshot 2023-11-01 092833](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/614c5cf9-f11d-4adb-8741-58408e848297)
+
+
+## Kategori Page
+![Screenshot 2023-11-01 092844](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/16e0c71c-c749-4057-b38b-8f0ca4c1ec54)
+
+Tambah Kategori
+![Screenshot 2023-11-01 092924](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/ab23deb0-cfcb-470d-89e9-38b14d82e78a)
+
+Edit Kategori
+![Screenshot 2023-11-01 092946](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/fe15ffe3-5016-4e86-b8a9-1e24b014ce7f)
+
+Hapus Kategori 
+![Screenshot 2023-11-01 093001](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/ff5e5f7b-2bbd-4abe-8c75-d577ab336bb5)
+
+## Satuan Page
+![Screenshot 2023-11-01 093014](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/293eeb02-32f4-4137-b152-a24b15c5ea5e)
+
+Tambah Satuan
+![Screenshot 2023-11-01 093033](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/361ec5e2-8813-4fd5-aeed-3470008c50bc)
+
+Edit Satuan 
+![Screenshot 2023-11-01 093044](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/0fe31535-cf0f-41ad-a865-cdcdcad8d785)
+
+Hapus Satuan 
+![Screenshot 2023-11-01 093057](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/dca0d222-7b5a-4ed6-8045-9cb6c8470188)
+
+## Barang Page
+![Screenshot 2023-11-01 093106](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/bd26ef23-2036-469f-a0e8-5e50383779dc)
+
+Tambah Barang  
+![Screenshot 2023-11-01 093215](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/a2f9fb2c-0abd-4fbb-ab98-ad828d5d5174)
+
+Edit Barang 
+![Screenshot 2023-11-01 093234](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/8f4562e7-16f0-4715-923d-ca2cec9e1785)
+
+Hapus Barang
+![Screenshot 2023-11-01 093246](https://github.com/afiifatuts/ci4_inventory_barang/assets/32781700/f86929e2-5261-42cb-bb1a-48b5273c9ee8)
+
+## Barang Masuk Page
